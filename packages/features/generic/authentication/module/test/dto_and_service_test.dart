@@ -39,7 +39,7 @@ Matcher _authError(AuthErrorCode code) => throwsA(
 const RegistrationData _registration = RegistrationData(
   email: 'nueva@correo.pe',
   password: 'Segura123',
-  fullName: 'Rosa Quispe',
+  fullName: 'Libia',
   country: Country.pe,
   documentType: DocumentType.dni,
   documentNumber: '45678912',
@@ -107,7 +107,7 @@ void main() {
           <String, Object?>{
             'email': 'nueva@correo.pe',
             'password': 'Segura123',
-            'full_name': 'Rosa Quispe',
+            'full_name': 'Libia',
             'country': 'PE',
             'document_type': 'DNI',
             'document_number': '45678912',
@@ -186,7 +186,7 @@ void main() {
           const RegistrationData(
             email: 'x@y.co',
             password: 'corta',
-            fullName: 'Ana Ruiz',
+            fullName: 'Daniela',
             country: Country.co,
             documentType: DocumentType.cc,
             documentNumber: '12',

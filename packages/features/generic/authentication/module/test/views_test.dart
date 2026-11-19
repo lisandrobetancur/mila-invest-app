@@ -368,7 +368,7 @@ void main() {
       await _tap(tester, AuthIds.registerCountryMxChip);
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerNameField),
-        'María López',
+        'Saul',
       );
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerEmailField),
@@ -422,7 +422,7 @@ void main() {
       await _tap(tester, AuthIds.registerCountryCoChip);
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerNameField),
-        'Ana Ruiz',
+        'Daniela',
       );
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerEmailField),
