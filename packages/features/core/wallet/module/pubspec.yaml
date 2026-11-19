@@ -8,6 +8,7 @@ environment:
   sdk: ^3.11.5
 
 dependencies:
+  decimal: 3.2.6
   design_system: 0.1.0
   disclaimer_banner: 0.1.0
   easy_localization: 3.0.8

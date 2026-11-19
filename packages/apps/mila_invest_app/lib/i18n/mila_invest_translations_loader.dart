@@ -5,6 +5,7 @@ import 'package:authentication/authentication.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:market/market.dart';
 import 'package:orders/orders.dart';
+import 'package:wallet/wallet.dart';
 
 import 'shell_languages.dart';
 
@@ -26,6 +27,7 @@ class MilaInvestTranslationsLoader extends AssetLoader {
         authenticationLanguages,
         marketLanguages,
         ordersLanguages,
+        walletLanguages,
       ];
 
   /// Traducciones mergeadas de [languageCode].

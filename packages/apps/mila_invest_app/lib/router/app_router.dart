@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 import 'package:market/market.dart';
 import 'package:navigator/navigator.dart';
 import 'package:orders/orders.dart';
+import 'package:wallet/wallet.dart';
 
 import 'app_navigation_shell.dart';
 import 'app_redirect.dart';
@@ -59,6 +60,7 @@ final Override goRouterProviderOverride = goRouterProvider.overrideWith((
       ...fullScreen(appCrossFullScreenRoutes),
       ...fullScreen(authenticationFullScreenRoutes),
       ...fullScreen(ordersFullScreenRoutes),
+      ...fullScreen(walletFullScreenRoutes),
       StatefulShellRoute.indexedStack(
         builder:
             (
