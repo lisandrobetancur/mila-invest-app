@@ -24,6 +24,9 @@ final class JsonReader {
 
   final Map<String, Object?> _json;
 
+  /// Objeto JSON envuelto, para entregárselo al `fromJson` de un DTO.
+  Map<String, Object?> get raw => _json;
+
   /// Lee una lista JSON de objetos desde el cuerpo de una respuesta.
   static List<JsonReader> listOf(Object? value) {
     if (value is! List<Object?>) {

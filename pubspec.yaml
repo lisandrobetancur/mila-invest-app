@@ -9,6 +9,7 @@ environment:
 workspace:
   - packages/development/lint
   - packages/features/core/market/constants
+  - packages/features/core/market/module
   - packages/features/core/market/typing
   - packages/features/core/orders/constants
   - packages/features/core/orders/typing
