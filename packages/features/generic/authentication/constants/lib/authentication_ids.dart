@@ -52,6 +52,10 @@ abstract final class AuthIds {
   /// Chip de país Perú.
   static const String registerCountryPeChip = 'auth_register_country_pe_chip';
 
+  /// Mensaje de error del país (ninguno elegido).
+  static const String registerCountryErrorText =
+      'auth_register_country_error_text';
+
   /// Campo de nombre completo.
   static const String registerNameField = 'auth_register_name_field';
 
@@ -99,6 +103,10 @@ abstract final class AuthIds {
   /// Checkbox de aceptación del aviso de simulación.
   static const String registerAcceptCheckbox = 'auth_register_accept_checkbox';
 
+  /// Mensaje de error del checkbox de aceptación.
+  static const String registerAcceptCheckboxErrorText =
+      'auth_register_accept_checkbox_error_text';
+
   /// Botón "Crear cuenta".
   static const String registerSubmitButton = 'auth_register_submit_button';
 
@@ -126,6 +134,7 @@ abstract final class AuthIds {
     registerCountryCoChip,
     registerCountryMxChip,
     registerCountryPeChip,
+    registerCountryErrorText,
     registerNameField,
     registerEmailField,
     registerDocumentCcChip,
@@ -140,6 +149,7 @@ abstract final class AuthIds {
     registerRequirementNumberText,
     registerDisclaimerText,
     registerAcceptCheckbox,
+    registerAcceptCheckboxErrorText,
     registerSubmitButton,
     registerLoginLink,
     registerErrorText,

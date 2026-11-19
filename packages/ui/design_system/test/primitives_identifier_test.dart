@@ -185,6 +185,29 @@ void main() {
       handle.dispose();
     });
 
+    testWidgets('AppTextField: el error conserva su id con el campo enfocado', (
+      WidgetTester tester,
+    ) async {
+      final SemanticsHandle handle = tester.ensureSemantics();
+      await _pump(tester, const _ErrorAfterTyping());
+
+      await tester.enterText(
+        find.bySemanticsIdentifier('test_email_field'),
+        'no-es-email',
+      );
+      await tester.pump();
+
+      expect(
+        _data(tester, 'test_email_field_error_text').label,
+        'Escribe un correo válido.',
+      );
+      expect(
+        _data(tester, 'test_email_field').flagsCollection.isTextField,
+        isTrue,
+      );
+      handle.dispose();
+    });
+
     testWidgets('AppTextField.numeric solo acepta dígitos en modo entero', (
       WidgetTester tester,
     ) async {
@@ -532,4 +555,24 @@ void main() {
       expect(find.byType(AppShimmerBox), findsOneWidget);
     });
   });
+}
+
+class _ErrorAfterTyping extends StatefulWidget {
+  const _ErrorAfterTyping();
+
+  @override
+  State<_ErrorAfterTyping> createState() => _ErrorAfterTypingState();
+}
+
+class _ErrorAfterTypingState extends State<_ErrorAfterTyping> {
+  String? _error;
+
+  @override
+  Widget build(BuildContext context) => AppTextField(
+    id: 'test_email_field',
+    label: 'Correo',
+    errorText: _error,
+    onChanged: (String value) =>
+        setState(() => _error = 'Escribe un correo válido.'),
+  );
 }

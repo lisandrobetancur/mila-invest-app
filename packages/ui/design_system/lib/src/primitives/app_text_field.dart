@@ -6,7 +6,10 @@ import 'identified.dart';
 /// Campo de texto de la app.
 ///
 /// El identificador queda en el nodo que tiene `isTextField`. El mensaje de
-/// error, si hay, lleva su propio identificador: [errorIdOf].
+/// error, si hay, se dibuja debajo del campo con su propio identificador
+/// ([errorIdOf]) y se anuncia a los lectores de pantalla. Va fuera de la
+/// decoración a propósito: dentro, el nodo del campo enfocado lo absorbe y
+/// el identificador del error desaparece del árbol.
 class AppTextField extends StatelessWidget {
   /// Crea un campo de texto.
   const AppTextField({
@@ -130,42 +133,49 @@ class AppTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String? error = errorText;
-    return Identified.field(
-      id: id,
-      child: TextField(
-        controller: controller,
-        focusNode: focusNode,
-        obscureText: obscureText,
-        enabled: enabled,
-        autofocus: autofocus,
-        keyboardType: keyboardType,
-        textInputAction: textInputAction,
-        textCapitalization: textCapitalization,
-        inputFormatters: inputFormatters,
-        autofillHints: autofillHints,
-        maxLength: maxLength,
-        onChanged: onChanged,
-        onSubmitted: onSubmitted,
-        style: Theme.of(context).textTheme.bodyLarge,
-        decoration: InputDecoration(
-          labelText: label,
-          hintText: hint,
-          helperText: helper,
-          counterText: '',
-          prefixIcon: prefix,
-          suffixIcon: suffix,
-          error: error == null
-              ? null
-              : Identified(
-                  id: errorIdOf(id),
-                  liveRegion: true,
-                  child: Text(
-                    error,
-                    style: Theme.of(context).inputDecorationTheme.errorStyle,
-                  ),
-                ),
+    final ThemeData theme = Theme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        Identified.field(
+          id: id,
+          child: TextField(
+            controller: controller,
+            focusNode: focusNode,
+            obscureText: obscureText,
+            enabled: enabled,
+            autofocus: autofocus,
+            keyboardType: keyboardType,
+            textInputAction: textInputAction,
+            textCapitalization: textCapitalization,
+            inputFormatters: inputFormatters,
+            autofillHints: autofillHints,
+            maxLength: maxLength,
+            onChanged: onChanged,
+            onSubmitted: onSubmitted,
+            style: theme.textTheme.bodyLarge,
+            decoration: InputDecoration(
+              labelText: label,
+              hintText: hint,
+              helperText: error == null ? helper : null,
+              counterText: '',
+              prefixIcon: prefix,
+              suffixIcon: suffix,
+              error: error == null ? null : const SizedBox.shrink(),
+            ),
+          ),
         ),
-      ),
+        if (error != null)
+          Padding(
+            padding: const EdgeInsets.only(left: 12, right: 12),
+            child: Identified(
+              id: errorIdOf(id),
+              liveRegion: true,
+              child: Text(error, style: theme.inputDecorationTheme.errorStyle),
+            ),
+          ),
+      ],
     );
   }
 }
