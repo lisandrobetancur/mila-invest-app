@@ -1,0 +1,14 @@
+{
+  "name": "mila-invest-semantics-probe",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sondas de medición: Flutter web con el árbol de semantics encendido vs apagado. No es una suite E2E.",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "^22",
+    "pngjs": "^7.0.0"
+  }
+}

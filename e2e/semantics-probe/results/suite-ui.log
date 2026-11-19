@@ -1,0 +1,9 @@
+npm notice run mila-invest-ui-e2e@0.1.0 npx
+npm notice run 'playwright' test -c /private/tmp/claude-501/-Users-lisandro--claude-spares-spare-JYEHtC/6d761848-d15d-47f3-842d-eda591447499/scratchpad/suite-ui.config.ts
+
+Running 380 tests using 1 worker
+
+[1/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:20:7 › Característica: Cerrar sesión › Escenario: cierra la sesión confirmando el diálogo @acceso
+[2/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:33:7 › Característica: Cerrar sesión › Escenario: puede arrepentirse y seguir dentro @acceso
+[3/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:12:7 › Característica: Iniciar sesión › Escenario: entra con la cuenta demo @smoke @acceso
+[4/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:26:7 › Característica: Iniciar sesión › Escenario: no entra con una contraseña incorrecta @acceso

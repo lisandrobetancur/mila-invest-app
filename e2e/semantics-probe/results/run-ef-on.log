@@ -1,0 +1,618 @@
+npm notice run mila-invest-semantics-probe@0.0.1 npx
+npm notice run 'playwright' test --config playwright.pendientes.config.ts --project=on --output=test-results/ef-on
+
+Running 310 tests using 1 worker
+
+[1/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X
+[2/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X
+[3/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[4/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos
+[5/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio
+[6/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login
+[7/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado
+[8/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio
+[9/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL)
+[10/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes
+[11/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X · locator.click()
+[12/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X · locator.click()
+[13/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[14/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[15/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio · locator.click()
+[16/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login · locator.click()
+[17/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[18/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio · locator.click()
+[19/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[20/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[21/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 390×844 › E11 botón atrás del navegador con un modal abierto (ticket)
+[22/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X
+[23/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X
+[24/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[25/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos
+[26/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio
+[27/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login
+[28/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado
+[29/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio
+[30/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL)
+[31/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes
+[32/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X · locator.click()
+[33/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X · locator.click()
+[34/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[35/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[36/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio · locator.click()
+[37/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login · locator.click()
+[38/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[39/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio · locator.click()
+[40/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[41/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[42/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 1280×800 › E11 botón atrás del navegador con un modal abierto (ticket)
+[43/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · el.click() sobre cada <input>
+[44/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · dispatchEvent(click) sobre cada <input>
+[45/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · el.click() sobre cada <input>
+[46/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · dispatchEvent(click) sobre cada <input>
+[47/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · el.click() sobre cada <input>
+[48/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>
+[49/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · el.click() sobre cada <input>
+[50/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>
+[51/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · el.click() sobre cada <input>
+[52/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>
+[53/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)
+[54/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)
+[55/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)
+[56/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)
+[57/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)
+[58/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)
+[59/310] [on] › pendientes/f-issues-abiertos.spec.ts:110:5 › F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta
+[60/310] [on] › pendientes/f-issues-abiertos.spec.ts:154:5 › F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)
+[61/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  1) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[62/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  2) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[63/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X
+[64/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X
+[65/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[66/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos
+[67/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio
+[68/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login
+[69/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado
+[70/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio
+[71/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL)
+[72/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes
+[73/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X · locator.click()
+[74/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X · locator.click()
+[75/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[76/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[77/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio · locator.click()
+[78/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login · locator.click()
+[79/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[80/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio · locator.click()
+[81/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[82/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[83/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 390×844 › E11 botón atrás del navegador con un modal abierto (ticket)
+[84/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X
+[85/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X
+[86/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[87/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos
+[88/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio
+[89/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login
+[90/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado
+[91/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio
+[92/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL)
+[93/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes
+[94/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X · locator.click()
+[95/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X · locator.click()
+[96/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[97/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[98/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio · locator.click()
+[99/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login · locator.click()
+[100/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[101/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio · locator.click()
+[102/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[103/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[104/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 1280×800 › E11 botón atrás del navegador con un modal abierto (ticket)
+[105/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · el.click() sobre cada <input>
+[106/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · dispatchEvent(click) sobre cada <input>
+[107/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · el.click() sobre cada <input>
+[108/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · dispatchEvent(click) sobre cada <input>
+[109/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · el.click() sobre cada <input>
+[110/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>
+[111/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · el.click() sobre cada <input>
+[112/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>
+[113/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · el.click() sobre cada <input>
+[114/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>
+[115/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)
+[116/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)
+[117/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)
+[118/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)
+[119/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)
+[120/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)
+[121/310] [on] › pendientes/f-issues-abiertos.spec.ts:110:5 › F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta
+[122/310] [on] › pendientes/f-issues-abiertos.spec.ts:154:5 › F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)
+[123/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  3) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[124/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  4) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[125/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X
+[126/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X
+[127/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[128/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos
+[129/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio
+[130/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login
+[131/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado
+[132/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio
+[133/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL)
+[134/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes
+[135/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X · locator.click()
+[136/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X · locator.click()
+[137/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[138/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[139/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio · locator.click()
+[140/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login · locator.click()
+[141/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[142/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio · locator.click()
+[143/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[144/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[145/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 390×844 › E11 botón atrás del navegador con un modal abierto (ticket)
+[146/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X
+[147/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X
+[148/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[149/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos
+[150/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio
+[151/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login
+[152/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado
+[153/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio
+[154/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL)
+[155/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes
+[156/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X · locator.click()
+[157/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X · locator.click()
+[158/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[159/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[160/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio · locator.click()
+[161/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login · locator.click()
+[162/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[163/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio · locator.click()
+[164/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[165/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[166/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 1280×800 › E11 botón atrás del navegador con un modal abierto (ticket)
+[167/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · el.click() sobre cada <input>
+[168/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · dispatchEvent(click) sobre cada <input>
+[169/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · el.click() sobre cada <input>
+[170/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · dispatchEvent(click) sobre cada <input>
+[171/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · el.click() sobre cada <input>
+[172/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>
+[173/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · el.click() sobre cada <input>
+[174/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>
+[175/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · el.click() sobre cada <input>
+[176/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>
+[177/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)
+[178/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)
+[179/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)
+[180/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)
+[181/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)
+[182/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)
+[183/310] [on] › pendientes/f-issues-abiertos.spec.ts:110:5 › F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta
+[184/310] [on] › pendientes/f-issues-abiertos.spec.ts:154:5 › F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)
+[185/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  5) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[186/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  6) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[187/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X
+[188/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X
+[189/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[190/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos
+[191/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio
+[192/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login
+[193/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado
+[194/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio
+[195/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL)
+[196/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes
+[197/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X · locator.click()
+[198/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X · locator.click()
+[199/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[200/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[201/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio · locator.click()
+[202/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login · locator.click()
+[203/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[204/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio · locator.click()
+[205/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[206/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[207/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 390×844 › E11 botón atrás del navegador con un modal abierto (ticket)
+[208/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X
+[209/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X
+[210/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[211/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos
+[212/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio
+[213/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login
+[214/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado
+[215/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio
+[216/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL)
+[217/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes
+[218/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X · locator.click()
+[219/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X · locator.click()
+[220/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[221/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[222/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio · locator.click()
+[223/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login · locator.click()
+[224/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[225/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio · locator.click()
+[226/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[227/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[228/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 1280×800 › E11 botón atrás del navegador con un modal abierto (ticket)
+[229/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · el.click() sobre cada <input>
+[230/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · dispatchEvent(click) sobre cada <input>
+[231/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · el.click() sobre cada <input>
+[232/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · dispatchEvent(click) sobre cada <input>
+[233/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · el.click() sobre cada <input>
+[234/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>
+[235/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · el.click() sobre cada <input>
+[236/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>
+[237/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · el.click() sobre cada <input>
+[238/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>
+[239/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)
+[240/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)
+[241/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)
+[242/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)
+[243/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)
+[244/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)
+[245/310] [on] › pendientes/f-issues-abiertos.spec.ts:110:5 › F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta
+[246/310] [on] › pendientes/f-issues-abiertos.spec.ts:154:5 › F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)
+[247/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  7) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[248/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  8) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[249/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X
+[250/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X
+[251/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[252/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos
+[253/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio
+[254/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login
+[255/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado
+[256/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio
+[257/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL)
+[258/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes
+[259/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 390×844 › E1 cerrar el ticket con la X · locator.click()
+[260/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 390×844 › E2 cerrar el depósito con la X · locator.click()
+[261/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 390×844 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[262/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 390×844 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[263/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 390×844 › E5 flecha atrás: ajustes → inicio · locator.click()
+[264/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 390×844 › E6 flecha atrás: registro → login · locator.click()
+[265/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 390×844 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[266/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 390×844 › E8 flecha atrás: billetera → inicio · locator.click()
+[267/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 390×844 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[268/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 390×844 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[269/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 390×844 › E11 botón atrás del navegador con un modal abierto (ticket)
+[270/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X
+[271/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X
+[272/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio
+[273/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos
+[274/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio
+[275/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login
+[276/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado
+[277/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio
+[278/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL)
+[279/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes
+[280/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:82:17 › 1280×800 › E1 cerrar el ticket con la X · locator.click()
+[281/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:97:17 › 1280×800 › E2 cerrar el depósito con la X · locator.click()
+[282/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:111:17 › 1280×800 › E3 tabs del shell: mercado → portafolio → actividad → inicio · locator.click()
+[283/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:127:17 › 1280×800 › E4 tabs de Actividad: órdenes ↔ movimientos · locator.click()
+[284/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:139:17 › 1280×800 › E5 flecha atrás: ajustes → inicio · locator.click()
+[285/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:150:17 › 1280×800 › E6 flecha atrás: registro → login · locator.click()
+[286/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:161:17 › 1280×800 › E7 flecha atrás: detalle de instrumento → mercado · locator.click()
+[287/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:172:17 › 1280×800 › E8 flecha atrás: billetera → inicio · locator.click()
+[288/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:183:17 › 1280×800 › E9 flecha atrás: confirmación → ticket (misma URL) · locator.click()
+[289/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:199:17 › 1280×800 › E10 flecha atrás: detalle de orden → órdenes · locator.click()
+[290/310] [on] › pendientes/e-cierres-tabs-atras.spec.ts:214:13 › 1280×800 › E11 botón atrás del navegador con un modal abierto (ticket)
+[291/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · el.click() sobre cada <input>
+[292/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · login · dispatchEvent(click) sobre cada <input>
+[293/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · el.click() sobre cada <input>
+[294/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · registro · dispatchEvent(click) sobre cada <input>
+[295/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · el.click() sobre cada <input>
+[296/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>
+[297/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · el.click() sobre cada <input>
+[298/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>
+[299/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · el.click() sobre cada <input>
+[300/310] [on] › pendientes/f-issues-abiertos.spec.ts:30:13 › F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>
+[301/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)
+[302/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)
+[303/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)
+[304/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)
+[305/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)
+[306/310] [on] › pendientes/f-issues-abiertos.spec.ts:74:13 › F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)
+[307/310] [on] › pendientes/f-issues-abiertos.spec.ts:110:5 › F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta
+[308/310] [on] › pendientes/f-issues-abiertos.spec.ts:154:5 › F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)
+[309/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  9) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "5"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[310/310] [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  10) [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "7"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ef-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  10 failed
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [on] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+  300 passed (29.8m)
+on exit=1

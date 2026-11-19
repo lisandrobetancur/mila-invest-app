@@ -1,0 +1,1287 @@
+npm notice run mila-invest-semantics-probe@0.0.1 npx
+npm notice run 'playwright' test a-campos b-scroll -g A1 login|A3 búsqueda|A4 depósito|A5 ticket|B9 |B10 --project=on --output=test-results/final-on
+
+Running 215 tests using 1 worker
+
+[1/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0
+[2/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0
+  1) [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "eco"
+    Received: "co"
+
+       99 |         await d.registrar({ gap, delay, focoTrasClick, lecturas, apagado });
+      100 |         if (!d.on) expect(apagado).toBe(true);
+    > 101 |         expect.soft((lecturas['+1000'] as { campo: string }).campo).toBe('eco');
+          |                                                                     ^
+      102 |         expect(ruta(page)).toBe('/market?q=eco');
+      103 |     });
+      104 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:101:69
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/market?q=eco"
+    Received: "/market?q=co"
+
+      100 |         if (!d.on) expect(apagado).toBe(true);
+      101 |         expect.soft((lecturas['+1000'] as { campo: string }).campo).toBe('eco');
+    > 102 |         expect(ruta(page)).toBe('/market?q=eco');
+          |                            ^
+      103 |     });
+      104 |
+      105 |     test(`A3b búsqueda con pausa (control) · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:102:28
+
+    Error Context: test-results/final-on/a-campos-A3-búsqueda-·-gap-0-delay-0-on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A3-búsqueda-·-gap-0-delay-0-on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A3-búsqueda-·-gap-0-delay-0-on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[3/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0
+[4/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=0
+[5/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50
+[6/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=50
+[7/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50
+[8/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=50
+[9/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0
+  2) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0 ───────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-50-delay-0-on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-50-delay-0-on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-50-delay-0-on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[10/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=0
+[11/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=0
+[12/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=0
+[13/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50
+[14/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=50
+[15/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=50
+[16/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=50
+[17/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0
+  3) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[18/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=0
+[19/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=0
+[20/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=0
+[21/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50
+[22/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=50
+[23/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=50
+[24/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=50
+[25/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0
+  4) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "mo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[26/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=0
+[27/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=0
+[28/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=0
+[29/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=50
+[30/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=50
+[31/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=50
+[32/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=50
+[33/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0
+  5) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: ""
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[34/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=0
+[35/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=0
+[36/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=0
+[37/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=50
+[38/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=50
+[39/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=50
+[40/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=50
+[41/215] [on] › probes/b-scroll.spec.ts:117:5 › B9 latencia del tap sobre un ítem
+[42/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10 arrastre táctil que empieza sobre un ítem
+[43/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10b arrastre táctil que empieza sobre un texto no interactivo
+[44/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0
+  6) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ────────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "demo@milainvest.app"
+    Received: "lainvest.app"
+
+      37 |         await d.registrar({ gap, delay, email, emailFinal, pass, focoTrasClick, focoTrasEmail, focoTrasPass, url: ruta(page), apagado });
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+    > 39 |         expect.soft(email).toBe(EMAIL);
+         |                            ^
+      40 |         expect.soft(pass).toBe(PASS);
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:39:28
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[45/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0
+[46/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0
+  7) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "50000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[47/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=0
+[48/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50
+[49/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=50
+[50/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50
+[51/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=50
+[52/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0
+[53/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=0
+[54/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=0
+[55/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=0
+[56/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50
+[57/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=50
+[58/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=50
+[59/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=50
+[60/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0
+  8) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[61/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=0
+[62/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=0
+[63/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=0
+[64/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50
+[65/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=50
+[66/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=50
+[67/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=50
+[68/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0
+  9) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[69/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=0
+[70/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=0
+[71/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=0
+[72/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=50
+[73/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=50
+[74/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=50
+[75/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=50
+[76/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0
+  10) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "mo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat1/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[77/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=0
+[78/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=0
+[79/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=0
+[80/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=50
+[81/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=50
+[82/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=50
+[83/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=50
+[84/215] [on] › probes/b-scroll.spec.ts:117:5 › B9 latencia del tap sobre un ítem
+[85/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10 arrastre táctil que empieza sobre un ítem
+[86/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10b arrastre táctil que empieza sobre un texto no interactivo
+[87/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0
+  11) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ───────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "demo@milainvest.app"
+    Received: "@milainvest.app"
+
+      37 |         await d.registrar({ gap, delay, email, emailFinal, pass, focoTrasClick, focoTrasEmail, focoTrasPass, url: ruta(page), apagado });
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+    > 39 |         expect.soft(email).toBe(EMAIL);
+         |                            ^
+      40 |         expect.soft(pass).toBe(PASS);
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:39:28
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[88/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0
+[89/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0
+  12) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ───────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "50000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[90/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=0
+[91/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50
+  13) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50 ──────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "demo@milainvest.app"
+    Received: "emo@milainvest.app"
+
+      37 |         await d.registrar({ gap, delay, email, emailFinal, pass, focoTrasClick, focoTrasEmail, focoTrasPass, url: ruta(page), apagado });
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+    > 39 |         expect.soft(email).toBe(EMAIL);
+         |                            ^
+      40 |         expect.soft(pass).toBe(PASS);
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:39:28
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-0-delay-50-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-0-delay-50-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-0-delay-50-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[92/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=50
+[93/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50
+  14) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ──────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "50000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[94/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=50
+[95/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0
+[96/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=0
+[97/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=0
+[98/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=0
+[99/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50
+[100/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=50
+[101/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=50
+[102/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=50
+[103/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0
+  15) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[104/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=0
+[105/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=0
+[106/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=0
+[107/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50
+  16) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50 ────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-50-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-50-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-50-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[108/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=50
+[109/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=50
+[110/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=50
+[111/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0
+[112/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=0
+[113/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=0
+[114/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=0
+[115/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=50
+[116/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=50
+[117/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=50
+[118/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=50
+[119/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0
+  17) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "34!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat2/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[120/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=0
+[121/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=0
+[122/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=0
+[123/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=50
+[124/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=50
+[125/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=50
+[126/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=50
+[127/215] [on] › probes/b-scroll.spec.ts:117:5 › B9 latencia del tap sobre un ítem
+[128/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10 arrastre táctil que empieza sobre un ítem
+[129/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10b arrastre táctil que empieza sobre un texto no interactivo
+[130/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0
+  18) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ───────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "demo@milainvest.app"
+    Received: "emo@milainvest.app"
+
+      37 |         await d.registrar({ gap, delay, email, emailFinal, pass, focoTrasClick, focoTrasEmail, focoTrasPass, url: ruta(page), apagado });
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+    > 39 |         expect.soft(email).toBe(EMAIL);
+         |                            ^
+      40 |         expect.soft(pass).toBe(PASS);
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:39:28
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[131/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0
+[132/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0
+[133/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=0
+[134/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50
+[135/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=50
+[136/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50
+  19) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ──────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "50000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[137/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=50
+[138/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0
+[139/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=0
+[140/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=0
+[141/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=0
+[142/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50
+[143/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=50
+[144/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=50
+[145/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=50
+[146/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0
+  20) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[147/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=0
+[148/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=0
+[149/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=0
+[150/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50
+[151/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=50
+[152/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=50
+[153/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=50
+[154/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0
+  21) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: ""
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-250-delay-0-on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[155/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=0
+[156/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=0
+[157/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=0
+[158/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=50
+[159/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=50
+[160/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=50
+[161/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=50
+[162/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0
+  22) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: ""
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat3/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-500-delay-0-on-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[163/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=0
+[164/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=0
+[165/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=0
+[166/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=50
+[167/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=50
+[168/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=50
+[169/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=50
+[170/215] [on] › probes/b-scroll.spec.ts:117:5 › B9 latencia del tap sobre un ítem
+[171/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10 arrastre táctil que empieza sobre un ítem
+[172/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10b arrastre táctil que empieza sobre un texto no interactivo
+[173/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0
+  23) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ───────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "demo@milainvest.app"
+    Received: "ainvest.app"
+
+      37 |         await d.registrar({ gap, delay, email, emailFinal, pass, focoTrasClick, focoTrasEmail, focoTrasPass, url: ruta(page), apagado });
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+    > 39 |         expect.soft(email).toBe(EMAIL);
+         |                            ^
+      40 |         expect.soft(pass).toBe(PASS);
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:39:28
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-0-delay-0-on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[174/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0
+[175/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0
+  24) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ───────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-0-on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[176/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=0
+[177/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50
+[178/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=50
+[179/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50
+  25) [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ──────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "250000"
+    Received: "50000"
+
+      140 |         await d.registrar({ gap, delay, msHastaElClick, focoTrasClick, alTerminar, focoAlTerminar, final, foco: await d.foco(), url: ruta(page), apagado });
+      141 |         if (!d.on) expect(apagado).toBe(true);
+    > 142 |         expect((final ?? '').replace(/\D/g, '')).toBe('250000');
+          |                                                  ^
+      143 |     });
+      144 |
+      145 |     test(`A5 ticket · ${v}`, async ({ page }, info) => {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:142:50
+
+    Error Context: test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A4-depósito-·-gap-0-delay-50-on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[180/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=0 delay=50
+[181/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0
+[182/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=0
+[183/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=0
+[184/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=0
+[185/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50
+  26) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: "emo1234!"
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-50-delay-50-on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-50-delay-50-on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-50-delay-50-on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[186/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=50 delay=50
+[187/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=50 delay=50
+[188/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=50 delay=50
+[189/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0
+  27) [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ─────────────────────────────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Demo1234!"
+    Received: ""
+
+      38 |         if (!d.on) expect(apagado, 'el árbol se encendió: corrida OFF descartada').toBe(true);
+      39 |         expect.soft(email).toBe(EMAIL);
+    > 40 |         expect.soft(pass).toBe(PASS);
+         |                           ^
+      41 |         expect(ruta(page)).toBe('/home');
+      42 |     });
+      43 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:40:27
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "/home"
+    Received: "/login"
+
+      39 |         expect.soft(email).toBe(EMAIL);
+      40 |         expect.soft(pass).toBe(PASS);
+    > 41 |         expect(ruta(page)).toBe('/home');
+         |                            ^
+      42 |     });
+      43 |
+      44 |   for (const gapEnter of [false, true]) {
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/probes/a-campos.spec.ts:41:28
+
+    Error Context: test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat4/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-on/a-campos-A1-login-·-gap-100-delay-0-on-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[190/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=0
+[191/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=0
+[192/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=0
+[193/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50
+[194/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=100 delay=50
+[195/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=100 delay=50
+[196/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=100 delay=50
+[197/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0
+[198/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=0
+[199/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=0
+[200/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=0
+[201/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=50
+[202/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=250 delay=50
+[203/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=250 delay=50
+[204/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=250 delay=50
+[205/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0
+[206/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=0
+[207/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=0
+[208/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=0
+[209/215] [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=50
+[210/215] [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=500 delay=50
+[211/215] [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=500 delay=50
+[212/215] [on] › probes/a-campos.spec.ts:145:9 › A5 ticket · gap=500 delay=50
+[213/215] [on] › probes/b-scroll.spec.ts:117:5 › B9 latencia del tap sobre un ítem
+[214/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10 arrastre táctil que empieza sobre un ítem
+[215/215] [on] › probes/b-scroll.spec.ts:157:13 › táctil › B10b arrastre táctil que empieza sobre un texto no interactivo
+  27 failed
+    [on] › probes/a-campos.spec.ts:84:9 › A3 búsqueda · gap=0 delay=0 ──────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=0 ────────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ─────────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ─────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ─────────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ─────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=50 ────────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=50 ──────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ─────────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=250 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=500 delay=0 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=0 delay=0 ─────────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=0 ─────────────────────────────
+    [on] › probes/a-campos.spec.ts:125:9 › A4 depósito · gap=0 delay=50 ────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=50 delay=50 ───────────────────────────────
+    [on] › probes/a-campos.spec.ts:19:9 › A1 login · gap=100 delay=0 ───────────────────────────────
+  188 passed (20.4m)
+on exit=1

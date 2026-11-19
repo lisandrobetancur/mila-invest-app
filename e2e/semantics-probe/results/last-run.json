@@ -1,0 +1,4165 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lisandro/.nvm/versions/node/v24.15.0/bin/node",
+      "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.pendientes.config.ts",
+      "f-issues",
+      "--list"
+    ],
+    "configFile": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/playwright.pendientes.config.ts",
+    "rootDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "on"
+        },
+        "id": "on",
+        "name": "on",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "off"
+        },
+        "id": "off",
+        "name": "off",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "on"
+        },
+        "name": "on",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "snapshotDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "trace": "on",
+          "deviceScaleFactor": 1,
+          "locale": "es",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "baseURL": "http://127.0.0.1:8081"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "on"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "off"
+        },
+        "name": "off",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "snapshotDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "trace": "on",
+          "deviceScaleFactor": 1,
+          "locale": "es",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "baseURL": "http://127.0.0.1:8082"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "off"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/last-run.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "f-issues-abiertos.spec.ts",
+      "file": "f-issues-abiertos.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ca39ac9608b17c3fa6cd",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ecfd5fd7f3f9d412038e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-570a576bce1163f59c25",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-977c5e5b4c7fe1ce82b5",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-9e7410d479fbf1797988",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-038d00e64fd19a751b78",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7153d4ccb7a28979df41",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4d8f07d162c0ad2b2dc2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-949171bb15fbe99eeb79",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f4ab7a4be0e2e23203eb",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-693be5677465b4300a88",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f6fe52ca694efecd51b2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-27562aaddded7de59894",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-9bde8c0ebf23a1ed1918",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-866b8c58dc6e48f488c0",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-fbbf9ccd0312dd880079",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a0016bdba09e1ab5bfc8",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-13506b3a6b3601391252",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6431450a41b326b2a1c3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2301916b88b55240ceca",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-54497a23fdbaef5bc6ce",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-28dd4319499c439d6737",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8bcfe29d6bb4c520c12d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d4b6ddb1ac56b520fcfa",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d6bf3dec41f5b0687dc3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-763e01a88ee1a6aacd2b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4752448f0a0d14402e86",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-096d55349c9fe287a169",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f2fb082fc44ac35d00c1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5da37ad65da3cfcea06a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-222b452b007ef997625a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e5c8b66b3c375c2720cd",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-436dc96d2c070a4616f9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-fcdb7bbd4e931e8bff6d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c728cef6e2940a69be29",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-46aeace7fdba609bad77",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b1909890a6c7ae500688",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3ebce3acf31ee50532b6",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-178641d8efbe326c9511",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f0ee71a2ae2952ff34d2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-1fae7d475eab03fa6107",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-60db7e0360c6ea782b2e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8e8b83a3555a62c64dde",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-867cabaedaadd7835d85",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8542c0677c05cc10bfa2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-041c7d0ffab28aade833",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4cecefbb05417fcf66fd",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-64ef271c21d4d8574e04",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4d792abce475cda4279b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e32d6dd22a77284f6bb4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-24ecb196e13a9734627a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8c7b8d0a6e55e88242b9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7a760967a027b13df2e2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ec847bb0d7dda93b45d1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-1ff13b31f7e79e873f47",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-60a3177a0ffb0f838cbc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5c5258d8724a5836c555",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-684a9b86558d0975be40",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3fa901b76635562b8dc1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-850478d7a3952500f4bf",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-70f0cac2befea12abd81",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d951f8c2edc6f5d22fe2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e482c09d162b617b7406",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-07c844c37dcfda45a23c",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7293796f5a7961bc50b3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ce77055d28ec07439d45",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f1723a8e8d0dc0b7d479",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3e861dcc016a8f16e29a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-0f9f7a73114919901edd",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-83888e99bcc0803f02d7",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-149bfb64281c9697ce54",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-df00e5fc487305737978",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5a17e10d81a0937980d9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b20906cf56756b55f8b3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c6f1b1ea2ee8fa31fd58",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c1857a454e6d7cc5c9da",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ff86735173885655a43c",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-965f995e7a0f173014f7",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-cbe417af95a16b4bdc22",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6b9977253e110cb4837b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-806708c8827ac8a59470",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ff2f285369a73569bc42",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-72334ee33dd3e279acfa",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-510d9bc046a8e9d0f75c",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-286470cd9ff75cd6bb70",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8c172bf855ea633ccd9a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-dbd2df6fd18ee22f9c46",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-769d9eb3c0799e11bc8a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d807ea91711f96e39b1d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8cbd35563e2571ded893",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ac3dcdc743e5a7b9eedf",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-0103904856d4b3dffd9f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-11cb069d199913058dc6",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6cd1e34def6d88f685dc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3bdbbc7163f23aebce3e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b37a4148ef7f222bb8a2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d283107491086c09eea0",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7ac1ff20714b66c59cd8",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a9a00d9618b9a21dc350",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e07bb5c972209a30662e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ad9c0f6f76f0615bd4aa",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-02acd17baedf7d412b46",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4badb07f1aec1052e1b1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-bc7512dcfcca6f4e7cfc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-fd4fed16f5192f048cdc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6a7dc3e401a60ffca6d1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f7c444579c42ed7aa599",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-66d21a000c2988de43a4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7ccfd83a13a1c50d44cd",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-fa8b33766639a2a05cdc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3a62ab83606ac33b489d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-71ad9179403dcf25d496",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-0cb01245ba15a32be6bf",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-321c241adadbe4f37016",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-99b88b8a8d362bdd96ab",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-72f116e4e4fe0c10618f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4b1e500de2892a82d623",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-10100b9dbd5fa1cc1b05",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2851a5f00d297bfae279",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-469b6e756107546087af",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8038653b800b26af9b58",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b26ca332a8003d528a03",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3e46fde5eddf670801be",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-30aa735fb691698699b4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b5ab8a5a8ed89b62a737",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-95fa95497132a8f473ef",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2c0d767c4c991e334c84",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c9bd2c919bfb52698a09",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-958e6af507e5d6648bc7",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b19c78eeee12ff24389b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b12fec5978470e6203d5",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-722963ef0f9c7ba8ebbb",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b2215f1403a97c98535e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6ae0a9fe8a9305a76c07",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8d4cdf0c556100e6e8c3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5debb9ba3f00ad06e90b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e6fd6ac259fffe173f29",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c42500c33fc86557ba7b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2f2c794e732441457d42",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-13707d40b34f83701ecc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ddea1617cc0a3587ad0b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-b90d07c45a80efbec76d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c3970af6746edc52ff77",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-af58fc0d2084a215ad50",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4692b7c541f697459b06",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f5f7f5ac2651bc2772b9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f39ac23e73ee16d77201",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4ec529732ad5fc6e76bc",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6dda33e95e4902a2db46",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a9b6bb166192d70ceb1c",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a7bddfde810f9f4cfb42",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c96e4529b7294101ca26",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-374715a45bfd3b77de75",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a1fdb895240687586c61",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ae39611102130705761f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-4fe51e93da3d433d9452",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-bafb99a39cc0cce55f10",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-85a5c17764f7a56a5ac6",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-bfe95b8d4c7fcd034c4f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f2d4f78bfee1df1de16d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6fd6b7f40dfb73f3baa1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5195029e1d1eb553257b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-27fd360b68f4b691384e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-7c065361271637c138c3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-556f7bdac244f7e42858",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a745384c7ed616a32835",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-0ff2e74f4134c3c63d82",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5ad30aa8b0283671d13d",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-48de1c036c536d2b6c44",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-51600c926c69f3e11faa",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-93ed4e31d225d48fa935",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c0aa38f8585d2f6e37bb",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-5948a6aac00da5673af9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8d7f0c845d6a0e66671e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-873acd9f517886fabcb4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-c3bb2892a4184690895a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2a6d913e0e9eaa9002f9",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-27d91aae90fe6c751006",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-48aae3f5f2807509569f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-8406a2fb9ff22d49a400",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F1 #195812 · login · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-507399f24be9f5d5fed4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · login · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-91871ed8b943139f8722",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-768ffee533bfdee80f23",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · registro · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-30db0c0932be0b5da120",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-811f2045a54b78baa2ce",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · mercado · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-cb2bf8f09dd36bc03035",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-da90665e18446c3c49e4",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · ticket · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-1268909be9755f000956",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · el.click() sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-1879020d5fcd108220af",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F1 #195812 · depósito · dispatchEvent(click) sobre cada <input>",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3f0b6776d6138ad0316a",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 30,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-1b520a8d392f2a7f463e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · login · correo · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2bf633b2dc9f6a1a6e77",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e92d370958cd4b87b655",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · mercado · búsqueda · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-524a707d213d42462e8f",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (mouse)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-fb462611d0858dce3b4b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F2 #195291 · depósito · monto · segundo click dentro del mismo campo (locator)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-53c3b3ecee57843ed7e3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 74,
+          "column": 13
+        },
+        {
+          "title": "F4a #194549 · /market: 30 pasos de rueda cruzando la carga perezosa, y vuelta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-d9e37ad2aa5872d4f573",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 110,
+          "column": 5
+        },
+        {
+          "title": "F4b #194549 · /market: scroll pedido por el DOM hasta un ítem lejano (scrollIntoViewIfNeeded)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-842d9ea8577ca0214ac2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 154,
+          "column": 5
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-ce6709420c30234ecef2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "off",
+              "projectName": "off",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-0880606d48366347affa",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T19:30:20.216Z",
+    "duration": 93.36600000000001,
+    "expected": 0,
+    "skipped": 200,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

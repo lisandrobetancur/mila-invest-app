@@ -1,0 +1,637 @@
+
+===== A1 =====
+-- on: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 2/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 2/5 ; ["demo@milainvest.app", "234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["mo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field"] → 1/5 ; ["demo@milainvest.app", "4!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   gap=  0 delay=50: 4/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 4/5 ; ["emo@milainvest.app", "Demo1234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   gap= 50 delay= 0: 3/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 3/5 ; ["demo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field"] → 1/5
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 2/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 2/5 ; ["demo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "4!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 2/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 2/5 ; ["demo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "o1234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "4!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 1/5 completo
+        ["demo@milainvest.app", "", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 2/5 ; ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5 ; ["demo@milainvest.app", "mo1234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   gap=500 delay=50: 4/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 4/5 ; ["demo@milainvest.app", "emo1234!", "/login", "input[type=text]#auth_login_email_field", "input[type=text]#auth_login_email_field", "input[type=password]#auth_login_password_field"] → 1/5
+   layout ON vs OFF: {'{"login": 0}': 50}
+   árbol apagado al final: {False: 50}
+-- off: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=password]"] → 5/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        ["demo@milainvest.app", "Demo1234!", "/home", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=password]"] → 5/5
+   layout ON vs OFF: {'{"login": 0}': 50}
+   árbol apagado al final: {True: 50}
+
+===== A2 =====
+-- on: texto completo, n/N por variante (gap, delay, gapEnter)
+   gap=  0 delay= 0: 0/5 completo
+        [{"document": "", "email": "eba@example.com102030", "name": "Ana Pruebaana.pru", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com10", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "0Clave1234", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "na Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=  0 delay=50: 0/5 completo
+        [{"document": "", "email": "na.prueba@example.com", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "na Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com1", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap= 50 delay= 0: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com1020", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "Cl", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "input[type=text]#auth_register_email_field"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "34", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "input[type=text]#auth_register_email_field"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap= 50 delay= 0 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap= 50 delay=50: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com1", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "na.prueba@example.com", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap= 50 delay=50 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 2/5
+   gap=100 delay= 0: 0/5 completo
+        [{"document": "", "email": ".prueba@example.com1020304050", "name": "Ana Pruebaana", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com1020304", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com10", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=100 delay= 0 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=100 delay=50: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com1", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "na.prueba@example.com", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=100 delay=50 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=250 delay= 0: 0/5 completo
+        [{"document": "", "email": "Clave1234", "name": "Ana Pruebaana.prueba@example", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "input[type=text]#auth_register_email_field"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "input[type=text]#auth_register_email_field"]] → 1/5 ; [{"document": "", "email": "prueba@example.com", "name": "Ana Pruebaana.", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ba@example.com", "name": "Ana Pruebaana.prue", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=250 delay= 0 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=250 delay=50: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com1", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5
+   gap=250 delay=50 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=500 delay= 0: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com1020304050", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "na.prueba@example.com", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "50Clave1", "name": "Ana Pruebaana.pru", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "input[type=text]#auth_register_email_field"]] → 1/5
+   gap=500 delay= 0 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 2/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   gap=500 delay=50: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "na.prueba@example.com", "name": "Ana Pruebaa", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 2/5
+   gap=500 delay=50 +Enter: 0/5 completo
+        [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"]] → 3/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5 ; [{"document": "", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": ""}, ["input[type=text]#auth_register_name_field", "input[type=text]#auth_register_name_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip", "flt-semantics#auth_register_document_cc_chip"], ["input[type=text]#auth_register_email_field", "input[type=text]#auth_register_email_field", "flt-semantics#auth_register_document_cc_chip"]] → 1/5
+   layout ON vs OFF: {'{"register": 0, "registro-final": 0}': 90}
+   árbol apagado al final: {False: 90}
+-- off: texto completo, n/N por variante (gap, delay, gapEnter)
+   gap=  0 delay= 0: 0/5 completo
+        [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": "ana.prueba@example.com1020304050Clave1234"}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 1/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=  0 delay=50: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 2/5
+   gap= 50 delay= 0: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 2/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap= 50 delay= 0 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 5/5
+   gap= 50 delay=50: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 2/5
+   gap= 50 delay=50 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 2/5
+   gap=100 delay= 0: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 3/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": "ana.prueba@example.com1020304050Clave1234"}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"]] → 1/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=100 delay= 0 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 5/5
+   gap=100 delay=50: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5
+   gap=100 delay=50 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 2/5
+   gap=250 delay= 0: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": "ana.prueba@example.com1020304050Clave1234"}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"]] → 1/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=250 delay= 0 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 4/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 1/5
+   gap=250 delay=50: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 4/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=250 delay=50 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 5/5
+   gap=500 delay= 0: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]"]] → 1/5 ; [{"document": "ana.prueba@example.com1020304050", "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=500 delay= 0 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5
+   gap=500 delay=50: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 4/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 1/5
+   gap=500 delay=50 +Enter: 0/5 completo
+        [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view"]] → 3/5 ; [{"document": null, "email": "ana.prueba@example.com", "name": "Ana Prueba", "password": null}, ["input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "input.flt-text-editing[type=text]", "flutter-view", "flutter-view"], ["input.flt-text-editing[type=text]", "flutter-view", "flutter-view"]] → 2/5
+   layout ON vs OFF: {'{"register": 0, "registro-final": 0}': 90}
+   árbol apagado al final: {True: 90}
+
+===== A3 =====
+-- on: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        {"+0": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market"}, "+1000": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market?q=eco"}, "+400": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market?q=eco"}} → 5/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        {"+0": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market"}, "+1000": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market?q=eco"}, "+400": {"campo": "eco", "foco": "input[type=text]#market_list_search_field", "url": "/market?q=eco"}} → 5/5
+   layout ON vs OFF: {'{"market": 0}': 50}
+   árbol apagado al final: {False: 50}
+-- off: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        {"+0": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market"}, "+1000": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market?q=eco"}, "+400": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market?q=eco"}} → 5/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        {"+0": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market"}, "+1000": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market?q=eco"}, "+400": {"campo": "eco", "foco": "input.flt-text-editing", "url": "/market?q=eco"}} → 5/5
+   layout ON vs OFF: {'{"market": 0}': 50}
+   árbol apagado al final: {True: 50}
+
+===== A3b =====
+-- on: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 3/5 ; ["rupo ", "rupo", "/market?q=rupo", "aval", "aval", "/market?q=aval"] → 2/5
+   gap=  0 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap= 50 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap= 50 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=100 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=100 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=250 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=250 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=500 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=500 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   layout ON vs OFF: {'{}': 50}
+   árbol apagado al final: {False: 50}
+-- off: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=  0 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap= 50 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap= 50 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=100 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=100 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=250 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=250 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=500 delay= 0: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   gap=500 delay=50: 0/5 completo
+        ["grupo ", "grupo", "/market?q=grupo", "aval", "aval", "/market?q=aval"] → 5/5
+   layout ON vs OFF: {'{}': 50}
+   árbol apagado al final: {True: 50}
+
+===== A4 =====
+-- on: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 1/5 completo
+        ["input[type=text]#wallet_deposit_amount_field", "50000", "50000", "input[type=text]#wallet_deposit_amount_field"] → 4/5 ; ["input[type=text]#wallet_deposit_amount_field", "250000", "250000", "input[type=text]#wallet_deposit_amount_field"] → 1/5
+   gap=  0 delay=50: 3/5 completo
+        ["input[type=text]#wallet_deposit_amount_field", "250000", "250000", "input[type=text]#wallet_deposit_amount_field"] → 3/5 ; ["input[type=text]#wallet_deposit_amount_field", "50000", "50000", "input[type=text]#wallet_deposit_amount_field"] → 2/5
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        ["input[type=text]#wallet_deposit_amount_field", "250000", "250000", "input[type=text]#wallet_deposit_amount_field"] → 5/5
+   ms hasta el click al campo: min 180 mediana 219 max 263
+   layout ON vs OFF: {'{"deposito-con-monto": 0}': 50}
+   árbol apagado al final: {False: 50}
+-- off: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        ["input.flt-text-editing", "250000", "250000", "input.flt-text-editing"] → 5/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        ["input.flt-text-editing", "250000", "250000", "input.flt-text-editing"] → 5/5
+   ms hasta el click al campo: min 356 mediana 526 max 728
+   layout ON vs OFF: {'{"deposito-con-monto": 0}': 50}
+   árbol apagado al final: {True: 50}
+
+===== A5 =====
+-- on: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        ["input[type=text]#orders_ticket_quantity_field", "1", "12", "12", "input[type=text]#orders_ticket_quantity_field"] → 3/5 ; ["input[type=text]#orders_ticket_quantity_field", "", "12", "12", "input[type=text]#orders_ticket_quantity_field"] → 2/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        ["input[type=text]#orders_ticket_quantity_field", "1", "12", "12", "input[type=text]#orders_ticket_quantity_field"] → 3/5 ; ["input[type=text]#orders_ticket_quantity_field", "", "12", "12", "input[type=text]#orders_ticket_quantity_field"] → 2/5
+   ms hasta el click al campo: min 180 mediana 230 max 316
+   layout ON vs OFF: {'{"ticket-con-cantidad": 0}': 50}
+   árbol apagado al final: {False: 50}
+-- off: texto completo, n/N por variante (gap, delay)
+   gap=  0 delay= 0: 5/5 completo
+        ["input.flt-text-editing", "1", "12", "12", "input.flt-text-editing"] → 5/5
+   gap=  0 delay=50: 5/5 completo
+   gap= 50 delay= 0: 5/5 completo
+   gap= 50 delay=50: 5/5 completo
+   gap=100 delay= 0: 5/5 completo
+   gap=100 delay=50: 5/5 completo
+   gap=250 delay= 0: 5/5 completo
+   gap=250 delay=50: 5/5 completo
+   gap=500 delay= 0: 5/5 completo
+   gap=500 delay=50: 5/5 completo
+        ["input.flt-text-editing", "1", "12", "12", "input.flt-text-editing"] → 5/5
+   ms hasta el click al campo: min 375 mediana 576 max 648
+   layout ON vs OFF: {'{"ticket-con-cantidad": 0}': 50}
+   árbol apagado al final: {True: 50}
+
+===== A10 [off] n=5 =====
+   {"antes": {"campo": "25", "foco": "input.flt-text-editing"}, "tecleado": {"7": {"campo": null, "foco": "flutter-view"}, "x": {"campo": null, "foco": "flutter-view"}}, "tipo": [null, null], "trasClick": {"campo": null, "foco": "flutter-view"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A10 [on] n=5 =====
+   {"antes": {"campo": "25", "foco": "input[type=text]#wallet_deposit_amount_field"}, "tecleado": {"7": {"campo": "25", "foco": "flt-semantics#wallet_deposit_suggested_item_1000000"}, "x": {"campo": "25", "foco": "flt-semantics#wallet_deposit_suggested_item_1000000"}}, "tipo": ["text", "text"], "trasClick": {"campo": "25", "foco": "flt-semantics#wallet_deposit_suggested_item_1000000"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A6 [off] n=5 =====
+   {"antes": {"campo": "abc", "foco": "input.flt-text-editing[type=password]"}, "tecleado": {"x": {"campo": null, "foco": "flutter-view"}}, "tipo": [null, null], "trasClick": {"campo": null, "foco": "flutter-view"}} → 5/5
+   layout final ON vs OFF: {"final": 0.0087} → 5/5
+
+===== A6 [on] n=5 =====
+   {"antes": {"campo": "abc", "foco": "input[type=password]#auth_login_password_field"}, "tecleado": {"x": {"campo": "abc", "foco": "flt-semantics#auth_login_password_toggle"}}, "tipo": ["password", "text"], "trasClick": {"campo": "abc", "foco": "flt-semantics#auth_login_password_toggle"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A7 [off] n=5 =====
+   {"antes": {"campo": "abc", "foco": "input.flt-text-editing[type=password]"}, "tecleado": {"x": {"campo": null, "foco": "flutter-view"}}, "tipo": [null, null], "trasClick": {"campo": null, "foco": "flutter-view"}} → 5/5
+   layout final ON vs OFF: {"final": 0.0087} → 5/5
+
+===== A7 [on] n=5 =====
+   {"antes": {"campo": "abc", "foco": "input[type=password]#auth_register_password_field"}, "tecleado": {"x": {"campo": "abc", "foco": "flt-semantics#auth_register_password_toggle"}}, "tipo": ["password", "text"], "trasClick": {"campo": "abc", "foco": "flt-semantics#auth_register_password_toggle"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A8 [off] n=5 =====
+   {"antes": {"campo": "eco", "foco": "input.flt-text-editing"}, "trasClick": {"campo": null, "foco": "flutter-view", "url": "/market"}, "trasX": {"campo": null, "foco": "flutter-view", "url": "/market"}} → 5/5
+   layout final ON vs OFF: {"final": 0.059} → 5/5
+
+===== A8 [on] n=5 =====
+   {"antes": {"campo": "eco", "foco": "input[type=text]#market_list_search_field"}, "trasClick": {"campo": "", "foco": "input[type=text]#market_list_search_field", "url": "/market"}, "trasX": {"campo": "x", "foco": "body", "url": "/market?q=x"}} → 4/5 ; {"antes": {"campo": "eco", "foco": "input[type=text]#market_list_search_field"}, "trasClick": {"campo": "", "foco": "input[type=text]#market_list_search_field", "url": "/market?q=eco"}, "trasX": {"campo": "", "foco": "input[type=text]#market_list_search_field", "url": "/market"}} → 1/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A9-decrease [off] n=5 =====
+   {"antes": {"campo": "15", "foco": "input.flt-text-editing"}, "tecleado": {"7": {"campo": null, "foco": "flutter-view"}, "x": {"campo": null, "foco": "flutter-view"}}, "tipo": [null, null], "trasClick": {"campo": null, "foco": "flutter-view"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A9-decrease [on] n=5 =====
+   {"antes": {"campo": "15", "foco": "input[type=text]#orders_ticket_quantity_field"}, "tecleado": {"7": {"campo": "15", "foco": "body"}, "x": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_decrease_stepper"}}, "tipo": ["text", "text"], "trasClick": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_decrease_stepper"}} → 3/5 ; {"antes": {"campo": "15", "foco": "input[type=text]#orders_ticket_quantity_field"}, "tecleado": {"7": {"campo": "15", "foco": "body"}, "x": {"campo": "15", "foco": "body"}}, "tipo": ["text", "text"], "trasClick": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_decrease_stepper"}} → 2/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A9-increase [off] n=5 =====
+   {"antes": {"campo": "15", "foco": "input.flt-text-editing"}, "tecleado": {"7": {"campo": null, "foco": "flutter-view"}, "x": {"campo": null, "foco": "flutter-view"}}, "tipo": [null, null], "trasClick": {"campo": null, "foco": "flutter-view"}} → 5/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== A9-increase [on] n=5 =====
+   {"antes": {"campo": "15", "foco": "input[type=text]#orders_ticket_quantity_field"}, "tecleado": {"7": {"campo": "15", "foco": "body"}, "x": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_increase_stepper"}}, "tipo": ["text", "text"], "trasClick": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_increase_stepper"}} → 4/5 ; {"antes": {"campo": "15", "foco": "input[type=text]#orders_ticket_quantity_field"}, "tecleado": {"7": {"campo": "15", "foco": "body"}, "x": {"campo": "15", "foco": "body"}}, "tipo": ["text", "text"], "trasClick": {"campo": "15", "foco": "flt-semantics#orders_ticket_quantity_increase_stepper"}} → 1/5
+   layout final ON vs OFF: {"final": 0} → 5/5
+
+===== B1 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B1 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 400, 500, 512, 512, 512, 512, 512]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B10 [off] n=5 vp=390x844 =====
+   {"abrioDetalle": false, "primerMovimiento_dedo": 45, "retencionPx": 44} → 5/5
+   t primer movimiento (ms): [250, 251, 256, 257, 297] ; lista al soltar: [256, 256, 256, 256, 256] ; lista final: [256, 256, 256, 256, 256] ; ms del gesto: [1199, 1292, 1203, 1201, 1202]
+   layout: {} → 5/5
+
+===== B10 [on] n=5 vp=390x844 =====
+   {"abrioDetalle": false, "primerMovimiento_dedo": 75, "retencionPx": 44} → 5/5
+   t primer movimiento (ms): [397, 399, 417, 432, 450] ; lista al soltar: [256, 256, 256, 256, 256] ; lista final: [256, 256, 256, 256, 256] ; ms del gesto: [1282, 1313, 1281, 1319, 1303]
+   layout: {} → 5/5
+
+===== B10b [off] n=5 vp=390x844 =====
+   {"abrioDetalle": false, "primerMovimiento_dedo": 15, "retencionPx": 14} → 5/5
+   t primer movimiento (ms): [166, 183, 184, 184, 185] ; lista al soltar: [286, 286, 286, 286, 286] ; lista final: [307, 308, 307, 308, 307] ; ms del gesto: [1223, 1220, 1221, 1209, 1320]
+   layout: {} → 5/5
+
+===== B10b [on] n=5 vp=390x844 =====
+   {"abrioDetalle": false, "primerMovimiento_dedo": 15, "retencionPx": 14} → 5/5
+   t primer movimiento (ms): [178, 180, 182, 185, 186] ; lista al soltar: [286, 286, 286, 286, 286] ; lista final: [304, 304, 304, 304, 306] ; ms del gesto: [1269, 1270, 1288, 1272, 1342]
+   layout: {} → 5/5
+
+===== B2 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B2 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 400, 500, 512, 512, 512, 512, 512]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B3 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B3 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 400, 500, 512, 512, 512, 512, 512]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B4 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B4 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 12, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 400, 500, 512, 512, 512, 512, 512]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B4b [off] n=5 vp=390x844 =====
+   {"dys": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "noScrollea": true, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B4b [on] n=5 vp=390x844 =====
+   {"dys": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "noScrollea": true, "saltos": [], "tops": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B5 [off] n=5 vp=390x600 =====
+   {"dys": [100, 100, 39, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B5 [on] n=5 vp=390x600 =====
+   {"dys": [100, 100, 39, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 239, 239, 239, 239, 239, 239, 239, 239]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B5b [off] n=5 vp=390x600 =====
+   {"dys": [100, 100, 39, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B5b [on] n=5 vp=390x600 =====
+   {"dys": [100, 100, 39, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 239, 239, 239, 239, 239, 239, 239, 239]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B6 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 51, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B6 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 100, 100, 51, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 400, 500, 551, 551, 551, 551, 551]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B7 [off] n=5 vp=390x844 =====
+   {"dys": [100, 100, 100, 3, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 3/5 ; {"dys": [100, 100, 83, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 2/5
+   layout: {"antes": 0.0031} → 1/5 ; {"antes": 0.0045} → 1/5 ; {"antes": 0.0047} → 1/5 ; {"antes": 0.0035} → 1/5 ; {"antes": 0.005} → 1/5
+
+===== B7 [on] n=5 vp=390x844 =====
+   {"dys": [100, 100, 83, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 283, 283, 283, 283, 283, 283, 283, 283]} → 4/5 ; {"dys": [100, 100, 100, 3, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [100, 200, 300, 303, 303, 303, 303, 303, 303, 303]} → 1/5
+   layout: {"antes": 0} → 5/5
+
+===== B8 [off] n=5 vp=390x600 =====
+   {"dys": [13, 0, 0, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": null} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B8 [on] n=5 vp=390x600 =====
+   {"dys": [13, 0, 0, 0, 0, 0, 0, 0, 0, 0], "noScrollea": false, "saltos": [], "tops": [13, 13, 13, 13, 13, 13, 13, 13, 13, 13]} → 5/5
+   layout: {"antes": 0} → 5/5
+
+===== B9 [off] n=5 vp=390x844 =====
+   ms pointerup → pushState: [18, 21.4, 22.5, 24.2, 30.1] ; url: "/market/instrument/ECOPETROL-CO" → 5/5
+   layout: {} → 5/5
+
+===== B9 [on] n=5 vp=390x844 =====
+   ms pointerup → pushState: [20.7, 21.4, 22.9, 23.2, 31.4] ; url: "/market/instrument/ECOPETROL-CO" → 5/5
+   layout: {} → 5/5
+
+===== C1 [on] entrega=click objetivo=- n=5 =====
+   {"alto": 560, "caja": {"height": 40, "width": 358, "x": 16, "y": 583}, "cajaDespues": {"height": 40, "width": 358, "x": 16, "y": 676}, "errores": ["auth_register_country_error_text", "auth_register_name_field_error_text", "auth_register_email_field_error_text", "auth_register_password_field_error_text", "auth_register_accept_checkbox_error_text"], "existe": 1, "fuera": true, "resultado": "entregado sin error", "scrollAntes": 0, "scrollDespues": 0} → 5/5
+
+===== C1 [on] entrega=evaluate objetivo=- n=5 =====
+   {"alto": 560, "caja": {"height": 40, "width": 358, "x": 16, "y": 583}, "cajaDespues": {"height": 40, "width": 358, "x": 16, "y": 676}, "errores": ["auth_register_country_error_text", "auth_register_name_field_error_text", "auth_register_email_field_error_text", "auth_register_password_field_error_text", "auth_register_accept_checkbox_error_text"], "existe": 1, "fuera": true, "resultado": "entregado sin error", "scrollAntes": 0, "scrollDespues": 0} → 5/5
+
+===== C1 [on] entrega=force objetivo=- n=5 =====
+   {"alto": 560, "caja": {"height": 40, "width": 358, "x": 16, "y": 583}, "cajaDespues": {"height": 40, "width": 358, "x": 16, "y": 676}, "errores": ["auth_register_country_error_text", "auth_register_name_field_error_text", "auth_register_email_field_error_text", "auth_register_password_field_error_text", "auth_register_accept_checkbox_error_text"], "existe": 1, "fuera": true, "resultado": "entregado sin error", "scrollAntes": 0, "scrollDespues": 0} → 4/5 ; {"alto": 560, "caja": {"height": 40, "width": 358, "x": 16, "y": 583}, "cajaDespues": {"height": 15, "width": 358, "x": 16, "y": 545}, "errores": ["auth_register_country_error_text", "auth_register_name_field_error_text", "auth_register_email_field_error_text", "auth_register_password_field_error_text", "auth_register_accept_checkbox_error_text"], "existe": 1, "fuera": true, "resultado": "entregado sin error", "scrollAntes": 0, "scrollDespues": 131} → 1/5
+
+===== C2 [on] entrega=click objetivo=market_detail_sell_button n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"market_detail_sell_button\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C2 [on] entrega=click objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C2 [on] entrega=evaluate objetivo=market_detail_sell_button n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.evaluate: Timeout 5000ms exceeded. | locator.evaluate: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"market_detail_sell_button\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C2 [on] entrega=evaluate objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.evaluate: Timeout 5000ms exceeded. | locator.evaluate: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C2 [on] entrega=force objetivo=market_detail_sell_button n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"market_detail_sell_button\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C2 [on] entrega=force objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=click objetivo=nav_home_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_home_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=click objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=evaluate objetivo=nav_home_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.evaluate: Timeout 5000ms exceeded. | locator.evaluate: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_home_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=evaluate objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.evaluate: Timeout 5000ms exceeded. | locator.evaluate: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=force objetivo=nav_home_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_home_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C3 [on] entrega=force objetivo=nav_market_tab n=5 =====
+   {"existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"nav_market_tab\"]')\u001b[22m", "ticketSigue": true, "url": "/orders/ticket/ECOPETROL-CO/buy", "url0": "/orders/ticket/ECOPETROL-CO/buy"} → 5/5
+   ids con el modal abierto: ["orders_ticket_view", "orders_ticket_simulated_text", "orders_ticket_close_icon_button", "orders_ticket_state_data", "orders_ticket_instrument_text", "orders_ticket_price_text", "orders_ticket_side_menu", "orders_ticket_side_buy_segment", "orders_ticket_side_sell_segment", "orders_ticket_quantity_decrease_stepper", "orders_ticket_quantity_field", "orders_ticket_quantity_increase_stepper", "orders_ticket_available_text", "orders_summary_panel", "orders_summary_price_text", "orders_summary_gross_text", "orders_summary_commission_text", "orders_summary_total_text", "orders_summary_available_after_text", "orders_ticket_review_button"] → 5/5
+
+===== C4 [on] entrega=click objetivo=- n=5 =====
+   {"cambioDePantalla": 0, "dialogoSigue": true, "existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"settings_theme_dark_segment\"]')\u001b[22m", "url": "/settings"} → 5/5
+   ids con el modal abierto: ["settings_logout_dialog", "settings_logout_cancel_button", "settings_logout_confirm_button"] → 5/5
+
+===== C4 [on] entrega=evaluate objetivo=- n=5 =====
+   {"cambioDePantalla": 0, "dialogoSigue": true, "existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.evaluate: Timeout 5000ms exceeded. | locator.evaluate: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"settings_theme_dark_segment\"]')\u001b[22m", "url": "/settings"} → 5/5
+   ids con el modal abierto: ["settings_logout_dialog", "settings_logout_cancel_button", "settings_logout_confirm_button"] → 5/5
+
+===== C4 [on] entrega=force objetivo=- n=5 =====
+   {"cambioDePantalla": 0, "dialogoSigue": true, "existe": 0, "fueraDelModal": [], "resultado": "ERROR: locator.click: Timeout 5000ms exceeded. | locator.click: Timeout 5000ms exceeded. | \u001b[2m  - waiting for locator('[flt-semantics-identifier=\"settings_theme_dark_segment\"]')\u001b[22m", "url": "/settings"} → 5/5
+   ids con el modal abierto: ["settings_logout_dialog", "settings_logout_cancel_button", "settings_logout_confirm_button"] → 5/5
+
+===== C5 [on] entrega=click objetivo=None n=5 =====
+   {"efecto": false, "resultado": "ningún tappable con id se solapa con el snackbar", "snackbar": [31, 780, 328, 40], "snackbarVisibleAlEntregar": null, "solapados": [], "url": "/wallet", "url0": "/wallet", "vistasAntes": "wallet_accounts_view", "vistasDespues": "wallet_accounts_view"} → 5/5
+
+===== C5 [on] entrega=evaluate objetivo=None n=5 =====
+   {"efecto": false, "resultado": "ningún tappable con id se solapa con el snackbar", "snackbar": [31, 780, 328, 40], "snackbarVisibleAlEntregar": null, "solapados": [], "url": "/wallet", "url0": "/wallet", "vistasAntes": "wallet_accounts_view", "vistasDespues": "wallet_accounts_view"} → 5/5
+
+===== C5 [on] entrega=force objetivo=None n=5 =====
+   {"efecto": false, "resultado": "ningún tappable con id se solapa con el snackbar", "snackbar": [31, 780, 328, 40], "snackbarVisibleAlEntregar": null, "solapados": [], "url": "/wallet", "url0": "/wallet", "vistasAntes": "wallet_accounts_view", "vistasDespues": "wallet_accounts_view"} → 5/5
+
+===== C6 [off] entrega=- objetivo=- n=5 =====
+   {"apagado": true, "focoAntes": {"cls": "flt-text-editing transparentTextEditing", "id": null, "sel": [3, 3], "tag": "input", "type": "password", "value": "abc"}, "focoDespues": {"cls": "", "id": null, "tag": "flutter-view", "type": null}, "textoCambioEnPantalla": true, "tipoDelInput": null} → 5/5
+
+===== C6 [on] entrega=- objetivo=- n=5 =====
+   {"apagado": false, "focoAntes": {"cls": "", "id": "auth_login_password_field", "sel": [3, 3], "tag": "input", "type": "password", "value": "abc"}, "focoDespues": {"cls": "", "id": "auth_login_password_toggle", "tag": "flt-semantics", "type": null}, "textoCambioEnPantalla": true, "tipoDelInput": "text"} → 5/5
+
+===== D1a [off] n=5 =====
+   {"apagado": true, "graficoCambiaConBotonApretado": 0.08, "graficoCambiaConHoverReal": 0.08} → 4/5 ; {"apagado": true, "graficoCambiaConBotonApretado": 0.081, "graficoCambiaConHoverReal": 0.081} → 1/5
+
+===== D1a [on] n=5 =====
+   {"apagado": false, "clickLocator": "ERROR: locator.click: Timeout 5000ms exceeded. | 2 × waiting for element to be visible, enabled and stable | <flutter-view tabindex=\"0\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible, enabled and stable", "graficoCambiaConBotonApretado": 0, "graficoCambiaConHoverReal": 0, "hoverLocator": "ERROR: locator.hover: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible and stable"} → 4/5 ; {"apagado": false, "clickLocator": "ERROR: locator.click: Timeout 5000ms exceeded. | 2 × waiting for element to be visible, enabled and stable | <flutter-view tabindex=\"0\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible, enabled and stable", "graficoCambiaConBotonApretado": 0, "graficoCambiaConHoverReal": 0, "hoverLocator": "ERROR: locator.hover: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 10 × waiting for element to be visible and stable"} → 1/5
+
+===== D1b [on] n=5 =====
+   {"click": "ERROR: locator.click: Timeout 5000ms exceeded. | 2 × waiting for element to be visible, enabled and stable | element is not stable | 9 × waiting for element to be visible, enabled and stable", "estilo": {"pe": "none", "role": null, "tappable": false}, "hover": "ERROR: locator.hover: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible and stable", "url": "/home"} → 3/5 ; {"click": "ERROR: locator.click: Timeout 5000ms exceeded. | 2 × waiting for element to be visible, enabled and stable | element is not stable | waiting for element to be visible, enabled and stable", "estilo": {"pe": "none", "role": null, "tappable": false}, "hover": "ERROR: locator.hover: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible and stable", "url": "/home"} → 2/5
+
+===== D1c [off] n=5 =====
+   {"apagado": true, "cambiaAlArrastrar": 0.171, "estadosTrasSoltar": []} → 5/5
+
+===== D1c [on] n=5 =====
+   {"apagado": false, "cambiaAlArrastrar": 0.166, "dragLocator": "ERROR: locator.dragTo: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 9 × waiting for element to be visible and stable", "estadosTrasSoltar": ["dashboard_home_state_data"]} → 3/5 ; {"apagado": false, "cambiaAlArrastrar": 0.171, "dragLocator": "ERROR: locator.dragTo: Timeout 5000ms exceeded. | 2 × waiting for element to be visible and stable | <flutter-view tabindex=\"-1\" flt-view-id=\"0\">…</flutter-view> intercepts pointer events | 10 × waiting for element to be visible and stable", "estadosTrasSoltar": ["dashboard_home_state_data"]} → 2/5
+
+===== D2 =====
+   inventario: 320 estáticos, 20 dinámicos ; ids distintos en el DOM: 416 ; pasos fallidos: []
+   estáticos que no aparecieron (89):
+      AppTextField
+      InstrumentTile
+      splash_view
+      splash_state_loading
+      splash_state_error
+      splash_error_text
+      splash_retry_button
+      settings_api_mode_text
+      auth_register_error_text
+      dashboard_home_state_loading
+      dashboard_home_state_empty
+      dashboard_home_state_error
+      dashboard_home_empty_title_text
+      dashboard_home_empty_deposit_button
+      dashboard_home_error_text
+      dashboard_home_retry_button
+      market_list_state_loading
+      market_list_state_error
+      market_list_loading_more_text
+      market_list_load_more_error_text
+      market_list_load_more_retry_button
+      market_list_error_text
+      market_list_retry_button
+      market_detail_state_loading
+      market_detail_state_empty
+      market_detail_state_error
+      market_detail_chart_error_text
+      market_detail_closed_reason_text
+      market_detail_not_found_title_text
+      market_detail_back_to_market_button
+      market_detail_error_text
+      market_detail_retry_button
+      orders_ticket_state_loading
+      orders_ticket_state_empty
+      orders_ticket_state_error
+      orders_ticket_preview_loading_text
+      orders_ticket_preview_error_text
+      orders_ticket_low_balance_text
+      orders_ticket_deposit_button
+      orders_ticket_closed_reason_text
+      orders_ticket_not_found_title_text
+      orders_ticket_not_found_close_button
+      orders_ticket_error_text
+      orders_ticket_retry_button
+      orders_confirm_error_text
+      orders_result_price_difference_text
+      orders_result_reject_reason_text
+      orders_result_suggested_action_button
+      orders_history_state_loading
+      orders_history_state_empty
+      orders_history_state_error
+      orders_history_loading_more_text
+      orders_history_load_more_error_text
+      orders_history_load_more_retry_button
+      orders_history_empty_title_text
+      orders_history_explore_button
+      orders_history_error_text
+      orders_history_retry_button
+      orders_detail_state_loading
+      orders_detail_state_empty
+      orders_detail_state_error
+      orders_detail_reject_reason_text
+      orders_detail_not_found_title_text
+      orders_detail_back_to_history_button
+      orders_detail_error_text
+      orders_detail_retry_button
+      wallet_accounts_state_loading
+      wallet_accounts_state_empty
+      wallet_accounts_state_error
+      wallet_accounts_empty_title_text
+      wallet_accounts_empty_deposit_button
+      wallet_accounts_error_text
+      wallet_accounts_retry_button
+      wallet_deposit_error_text
+      portfolio_overview_state_loading
+      portfolio_overview_state_empty
+      portfolio_overview_state_error
+      portfolio_overview_empty_title_text
+      portfolio_overview_explore_button
+      portfolio_overview_error_text
+      portfolio_overview_retry_button
+      transactions_list_state_loading
+      transactions_list_state_error
+      transactions_list_loading_more_text
+      transactions_list_load_more_error_text
+      transactions_list_load_more_retry_button
+      transactions_list_empty_deposit_button
+      transactions_list_error_text
+      transactions_list_retry_button
+   dinámicos:
+      dashboard_mover_item_<instrumentId>: 6 ids
+      dashboard_recent_item_<transactionId>: 5 ids
+      <…>_amount_text: 18 ids con ese sufijo
+      dashboard_allocation_item_<type>: 3 ids
+      market_list_instrument_item_<instrumentId>: 13 ids
+      orders_history_item_<orderId>: 6 ids
+      <…>_status_text: 9 ids con ese sufijo
+      <…>_total_text: 8 ids con ese sufijo
+      wallet_account_item_<currencyCode>: 3 ids
+      wallet_deposit_suggested_item_<amount>: 3 ids
+      portfolio_position_item_<instrumentId>: 4 ids
+      <…>_quantity_text: 6 ids con ese sufijo
+      <…>_avg_cost_text: 4 ids con ese sufijo
+      <…>_value_text: 5 ids con ese sufijo
+      <…>_pnl_text: 5 ids con ese sufijo
+      portfolio_allocation_item_<type>: 3 ids
+      transactions_day_item_<isoDate>: 3 ids
+      transactions_list_item_<transactionId>: 13 ids
+      <…>_amount_text: 18 ids con ese sufijo
+      <…>_description_text: 14 ids con ese sufijo
+   en el DOM y no en el inventario: []
+   ids por estado: {"onboarding paso 1": 7, "onboarding paso 2": 7, "onboarding paso 3": 7, "login": 9, "login con errores de campo": 11, "login con credenciales incorrectas": 10, "registro": 17, "registro con errores": 22, "registro país co": 25, "registro país mx": 24, "registro país pe": 25, "inicio": 56, "mercado": 70, "mercado con búsqueda": 23, "mercado sin resultados": 21, "detalle de instrumento": 33, "ticket": 20, "ticket sin saldo": 15, "confirmación": 14, "resultado": 12, "ticket de venta": 20, "portafolio": 38, "actividad · movimientos": 62, "actividad · filtrada": 22, "actividad · órdenes": 32, "detalle de orden": 20, "billetera": 16, "depósito": 13, "depósito con monto vacío": 14, "billetera con snackbar": 17, "ajustes": 18, "ajustes · diálogo de cerrar sesión": 3, "ruta desconocida con sesión (/esta-ruta-no-existe)": 3, "ruta desconocida (/login)": 9, "inicio a 1280×800": 56}
