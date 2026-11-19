@@ -28,6 +28,7 @@ class _AccountCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) => AppCard(
     child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _InfoRow(
           id: AppCrossIds.settingsAccountNameText,

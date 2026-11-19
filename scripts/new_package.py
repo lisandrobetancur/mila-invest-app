@@ -52,7 +52,7 @@ def main() -> None:
     (package / "lib").mkdir(parents=True, exist_ok=True)
     (package / "pubspec.yaml").write_text(
         f"name: {name}\n"
-        f"description: {description}\n"
+        f"description: \"{description}\"\n"
         "publish_to: none\n"
         "version: 0.1.0\n"
         "resolution: workspace\n\n"

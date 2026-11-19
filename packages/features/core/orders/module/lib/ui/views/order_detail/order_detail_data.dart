@@ -53,6 +53,7 @@ class _OrderDetailData extends ConsumerWidget {
           const SizedBox(height: AppSpacing.md),
           AppCard(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 row(
                   'orders.detail.instrument',

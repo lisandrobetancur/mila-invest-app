@@ -289,6 +289,48 @@ void main() {
       handle.dispose();
     });
 
+    for (final ThemeData theme in <ThemeData>[AppTheme.light, AppTheme.dark]) {
+      testWidgets('AppChip seleccionado: texto legible sobre primary '
+          '(${theme.brightness.name})', (WidgetTester tester) async {
+        await tester.pumpWidget(
+          MaterialApp(
+            theme: theme,
+            home: Scaffold(
+              body: Row(
+                children: <Widget>[
+                  AppChip(
+                    id: 'test_selected_chip',
+                    label: 'Todos',
+                    selected: true,
+                    onSelected: (_) {},
+                  ),
+                  AppChip(
+                    id: 'test_idle_chip',
+                    label: 'CO',
+                    selected: false,
+                    onSelected: (_) {},
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+
+        Color? colorOf(String text) => tester
+            .widget<RichText>(
+              find.descendant(
+                of: find.text(text),
+                matching: find.byType(RichText),
+              ),
+            )
+            .text
+            .style
+            ?.color;
+        expect(colorOf('Todos'), theme.colorScheme.onPrimary);
+        expect(colorOf('CO'), theme.colorScheme.onSurface);
+      });
+    }
+
     testWidgets('AppCheckbox: id en el nodo con isChecked y tap', (
       WidgetTester tester,
     ) async {

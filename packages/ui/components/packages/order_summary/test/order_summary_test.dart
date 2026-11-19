@@ -80,6 +80,30 @@ void main() {
     handle.dispose();
   });
 
+  testWidgets('cada fila pone la etiqueta a la izquierda y el valor a la '
+      'derecha', (WidgetTester tester) async {
+    await _pump(
+      tester,
+      SizedBox(
+        width: 340,
+        child: OrderSummary(
+          ids: _ids,
+          labels: _labels,
+          price: _cop('2385'),
+          gross: _cop('23850'),
+          commission: _cop('5000'),
+          total: _cop('28850'),
+        ),
+      ),
+    );
+
+    final Rect label = tester.getRect(find.text('Comisión'));
+    final Rect value = tester.getRect(find.text(r'$ 5.000 COP'));
+    final Rect summary = tester.getRect(find.byType(OrderSummary));
+    expect(label.left, moreOrLessEquals(summary.left, epsilon: 1));
+    expect(value.right, moreOrLessEquals(summary.right, epsilon: 1));
+  });
+
   testWidgets('el saldo resultante negativo se pinta de error', (
     WidgetTester tester,
   ) async {

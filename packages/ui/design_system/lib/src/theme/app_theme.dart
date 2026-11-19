@@ -212,7 +212,14 @@ abstract final class AppTheme {
         showCheckmark: false,
         side: BorderSide.none,
         shape: const RoundedRectangleBorder(borderRadius: AppRadius.smAll),
-        labelStyle: AppTypography.labelSmall.copyWith(color: textPrimary),
+        // El color del texto depende de la selección: sobre `primary` va
+        // `onPrimary`; si no, el texto quedaba del mismo color que el fondo.
+        labelStyle: AppTypography.labelSmall.copyWith(
+          color: WidgetStateColor.resolveWith(
+            (Set<WidgetState> states) =>
+                states.contains(WidgetState.selected) ? onPrimary : textPrimary,
+          ),
+        ),
         secondaryLabelStyle: AppTypography.labelSmall.copyWith(
           color: onPrimary,
         ),

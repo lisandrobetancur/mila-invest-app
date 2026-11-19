@@ -109,6 +109,7 @@ class OrderSummary extends StatelessWidget {
       id: ids.root,
       child: Column(
         mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           _Row(
             label: labels.price,
