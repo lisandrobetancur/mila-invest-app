@@ -78,6 +78,10 @@ abstract final class OrdersIds {
   static const String ticketNotFoundTitleText =
       'orders_ticket_not_found_title_text';
 
+  /// "Cerrar" desde "no encontrado".
+  static const String ticketNotFoundCloseButton =
+      'orders_ticket_not_found_close_button';
+
   /// Mensaje de error de carga.
   static const String ticketErrorText = 'orders_ticket_error_text';
 
@@ -159,6 +163,9 @@ abstract final class OrdersIds {
 
   /// Historial con error.
   static const String historyStateError = 'orders_history_state_error';
+
+  /// Selector de sección de la tab Actividad.
+  static const String historySectionMenu = 'orders_history_section_menu';
 
   /// Sección "Movimientos" del selector de Actividad.
   static const String historyMovementsTab = 'orders_history_movements_tab';
@@ -304,6 +311,7 @@ abstract final class OrdersIds {
     ticketClosedReasonText,
     ticketReviewButton,
     ticketNotFoundTitleText,
+    ticketNotFoundCloseButton,
     ticketErrorText,
     ticketRetryButton,
     summaryPanel,
@@ -330,6 +338,7 @@ abstract final class OrdersIds {
     historyStateData,
     historyStateEmpty,
     historyStateError,
+    historySectionMenu,
     historyMovementsTab,
     historyOrdersTab,
     historyStatusAllChip,

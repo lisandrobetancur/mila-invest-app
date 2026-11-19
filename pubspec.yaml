@@ -12,9 +12,12 @@ workspace:
   - packages/features/core/market/module
   - packages/features/core/market/typing
   - packages/features/core/orders/constants
+  - packages/features/core/orders/module
   - packages/features/core/orders/typing
   - packages/features/core/portfolio/constants
   - packages/features/core/portfolio/typing
+  - packages/features/core/transactions/constants
+  - packages/features/core/transactions/typing
   - packages/features/core/wallet/constants
   - packages/features/core/wallet/typing
   - packages/features/generic/app_cross/constants
