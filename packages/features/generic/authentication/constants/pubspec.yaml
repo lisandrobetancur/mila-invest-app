@@ -1,0 +1,17 @@
+name: authentication_constants
+description: Identificadores, rutas y límites de authentication.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: 0.1.0

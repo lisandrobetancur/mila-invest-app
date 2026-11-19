@@ -1,0 +1,21 @@
+name: authentication_typing
+description: Contrato público de authentication.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  authentication_constants: 0.1.0
+  equatable: 2.1.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: 2.6.1
+  typing: 0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: 0.1.0

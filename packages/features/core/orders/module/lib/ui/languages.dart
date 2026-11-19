@@ -1,0 +1,223 @@
+/// Traducciones de orders, por idioma.
+const Map<String, Map<String, Object?>>
+ordersLanguages = <String, Map<String, Object?>>{
+  'es': <String, Object?>{
+    'orders': <String, Object?>{
+      'common': <String, Object?>{
+        'simulated': 'Simulado',
+        'disclaimer':
+            'Simulación con fines educativos. No es asesoría financiera.',
+        'retry': 'Reintentar',
+        'back': 'Volver',
+        'close': 'Cerrar',
+        'buy': 'Comprar',
+        'sell': 'Vender',
+      },
+      'ticket': <String, Object?>{
+        'title_buy': 'Comprar {ticker}',
+        'title_sell': 'Vender {ticker}',
+        'quantity': 'Cantidad',
+        'decrease': 'Restar una unidad',
+        'increase': 'Sumar una unidad',
+        'available': 'Disponible',
+        'position': 'Tienes {quantity} unidades',
+        'previewing': 'Calculando el costo de la orden',
+        'low_balance': 'Tu saldo quedará bajo después de esta compra.',
+        'deposit': 'Depositar',
+        'review': 'Revisar orden',
+        'closed_reason': 'El mercado está cerrado. Podrás operar cuando abra.',
+        'quantity_invalid': 'Escribe una cantidad entera.',
+        'quantity_min': 'La cantidad mínima es 1.',
+        'quantity_max': 'La cantidad máxima es 1.000.000.',
+        'quantity_position': 'Solo puedes vender las unidades que tienes.',
+        'not_found_title': 'No encontramos este instrumento',
+      },
+      'summary': <String, Object?>{
+        'estimated_price': 'Precio estimado',
+        'executed_price': 'Precio de ejecución',
+        'gross': 'Monto bruto',
+        'commission': 'Comisión',
+        'total_buy': 'Total a pagar',
+        'total_sell': 'Total a recibir',
+        'available_after': 'Saldo resultante',
+      },
+      'confirm': <String, Object?>{
+        'title': 'Revisa tu orden',
+        'order_buy': 'Vas a comprar {quantity} {ticker} a precio de mercado.',
+        'order_sell': 'Vas a vender {quantity} {ticker} a precio de mercado.',
+        'submit_buy': 'Confirmar compra',
+        'submit_sell': 'Confirmar venta',
+      },
+      'result': <String, Object?>{
+        'title_filled': 'Orden ejecutada',
+        'title_rejected': 'Orden rechazada',
+        'title_pending': 'Orden pendiente',
+        'title_cancelled': 'Orden cancelada',
+        'price_difference':
+            'El precio final fue {difference} distinto al estimado.',
+        'portfolio': 'Ver portafolio',
+        'done': 'Listo',
+        'deposit': 'Depositar',
+      },
+      'status': <String, Object?>{
+        'pending': 'Pendiente',
+        'filled': 'Ejecutada',
+        'rejected': 'Rechazada',
+        'cancelled': 'Cancelada',
+      },
+      'history': <String, Object?>{
+        'title': 'Actividad',
+        'movements': 'Movimientos',
+        'orders': 'Órdenes',
+        'status_all': 'Todas',
+        'loading_more': 'Cargando más órdenes',
+        'empty_title': 'Aún no tienes órdenes',
+        'empty_filtered_title': 'No hay órdenes con ese estado',
+        'empty_body': 'Cuando compres o vendas, tus órdenes aparecerán aquí.',
+        'explore': 'Explorar mercado',
+        'item': '{side} {quantity} {ticker}',
+      },
+      'detail': <String, Object?>{
+        'title': 'Detalle de la orden',
+        'instrument': 'Instrumento',
+        'side': 'Lado',
+        'quantity': 'Cantidad',
+        'created': 'Creada',
+        'filled': 'Ejecutada',
+        'reject_reason': 'Motivo del rechazo',
+        'view_instrument': 'Ver instrumento',
+        'not_found_title': 'No encontramos esta orden',
+        'back_to_history': 'Ir a mis órdenes',
+      },
+      'error': <String, Object?>{
+        'insufficient_funds':
+            'No tienes saldo suficiente. Deposita o reduce la cantidad.',
+        'insufficient_position':
+            'No tienes suficientes unidades para vender esa cantidad.',
+        'market_closed':
+            'El mercado está cerrado. Inténtalo cuando vuelva a abrir.',
+        'instrument_not_found': 'No encontramos este instrumento.',
+        'order_not_found': 'No encontramos esta orden.',
+        'idempotency':
+            'Esta orden ya se envió con otros datos. Revisa tu historial.',
+        'validation': 'Revisa la cantidad de la orden.',
+        'rate_limited': 'Hiciste muchas órdenes seguidas. Espera un momento.',
+        'network':
+            'No pudimos conectar. Revisa tu conexión y vuelve a intentarlo.',
+        'unexpected':
+            'Recibimos una respuesta inesperada. Revisa tu historial antes '
+            'de reintentar.',
+        'unknown': 'Algo salió mal con la orden. Inténtalo de nuevo.',
+      },
+    },
+  },
+  'en': <String, Object?>{
+    'orders': <String, Object?>{
+      'common': <String, Object?>{
+        'simulated': 'Simulated',
+        'disclaimer':
+            'Simulation for educational purposes. Not financial advice.',
+        'retry': 'Try again',
+        'back': 'Back',
+        'close': 'Close',
+        'buy': 'Buy',
+        'sell': 'Sell',
+      },
+      'ticket': <String, Object?>{
+        'title_buy': 'Buy {ticker}',
+        'title_sell': 'Sell {ticker}',
+        'quantity': 'Quantity',
+        'decrease': 'Remove one unit',
+        'increase': 'Add one unit',
+        'available': 'Available',
+        'position': 'You hold {quantity} units',
+        'previewing': 'Calculating the order cost',
+        'low_balance': 'Your balance will be low after this purchase.',
+        'deposit': 'Deposit',
+        'review': 'Review order',
+        'closed_reason': 'The market is closed. You can trade when it opens.',
+        'quantity_invalid': 'Enter a whole number.',
+        'quantity_min': 'The minimum quantity is 1.',
+        'quantity_max': 'The maximum quantity is 1,000,000.',
+        'quantity_position': 'You can only sell the units you hold.',
+        'not_found_title': 'We could not find this instrument',
+      },
+      'summary': <String, Object?>{
+        'estimated_price': 'Estimated price',
+        'executed_price': 'Execution price',
+        'gross': 'Gross amount',
+        'commission': 'Commission',
+        'total_buy': 'Total to pay',
+        'total_sell': 'Total to receive',
+        'available_after': 'Resulting balance',
+      },
+      'confirm': <String, Object?>{
+        'title': 'Review your order',
+        'order_buy': 'You are buying {quantity} {ticker} at market price.',
+        'order_sell': 'You are selling {quantity} {ticker} at market price.',
+        'submit_buy': 'Confirm purchase',
+        'submit_sell': 'Confirm sale',
+      },
+      'result': <String, Object?>{
+        'title_filled': 'Order filled',
+        'title_rejected': 'Order rejected',
+        'title_pending': 'Order pending',
+        'title_cancelled': 'Order cancelled',
+        'price_difference':
+            'The final price was {difference} away from the estimate.',
+        'portfolio': 'View portfolio',
+        'done': 'Done',
+        'deposit': 'Deposit',
+      },
+      'status': <String, Object?>{
+        'pending': 'Pending',
+        'filled': 'Filled',
+        'rejected': 'Rejected',
+        'cancelled': 'Cancelled',
+      },
+      'history': <String, Object?>{
+        'title': 'Activity',
+        'movements': 'Transactions',
+        'orders': 'Orders',
+        'status_all': 'All',
+        'loading_more': 'Loading more orders',
+        'empty_title': 'No orders yet',
+        'empty_filtered_title': 'No orders with that status',
+        'empty_body': 'When you buy or sell, your orders will show up here.',
+        'explore': 'Explore market',
+        'item': '{side} {quantity} {ticker}',
+      },
+      'detail': <String, Object?>{
+        'title': 'Order details',
+        'instrument': 'Instrument',
+        'side': 'Side',
+        'quantity': 'Quantity',
+        'created': 'Created',
+        'filled': 'Filled',
+        'reject_reason': 'Rejection reason',
+        'view_instrument': 'View instrument',
+        'not_found_title': 'We could not find this order',
+        'back_to_history': 'Go to my orders',
+      },
+      'error': <String, Object?>{
+        'insufficient_funds':
+            'You do not have enough balance. Deposit or lower the quantity.',
+        'insufficient_position':
+            'You do not hold enough units to sell that quantity.',
+        'market_closed': 'The market is closed. Try again when it reopens.',
+        'instrument_not_found': 'We could not find this instrument.',
+        'order_not_found': 'We could not find this order.',
+        'idempotency':
+            'This order was already sent with other details. Check your '
+            'history.',
+        'validation': 'Check the order quantity.',
+        'rate_limited': 'Too many orders in a row. Wait a moment.',
+        'network': 'We could not connect. Check your connection and retry.',
+        'unexpected':
+            'We got an unexpected response. Check your history before '
+            'retrying.',
+        'unknown': 'Something went wrong with the order. Try again.',
+      },
+    },
+  },
+};
