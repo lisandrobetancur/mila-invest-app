@@ -1,0 +1,21 @@
+name: typing
+description: Tipos y contratos compartidos por toda la app MILA Invest.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  collection: 1.19.1
+  decimal: 3.2.6
+  equatable: 2.1.0
+  flutter:
+    sdk: flutter
+  flutter_riverpod: 2.6.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: 0.1.0
