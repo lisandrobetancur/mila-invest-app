@@ -77,3 +77,14 @@ abstract class AutoDisposeViewModel<T> extends AutoDisposeNotifier<T>
   @override
   T build() => _start(ref);
 }
+
+/// Base de los controllers de una vista que depende de un argumento (por
+/// ejemplo, el id del instrumento del detalle).
+///
+/// Dentro de [initState] y [postInit] el argumento está en `arg`.
+abstract class AutoDisposeFamilyViewModel<T, A>
+    extends AutoDisposeFamilyNotifier<T, A>
+    with ViewModelCore<T> {
+  @override
+  T build(A arg) => _start(ref);
+}
