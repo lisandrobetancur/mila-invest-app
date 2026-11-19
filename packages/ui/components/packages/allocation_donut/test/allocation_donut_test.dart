@@ -63,4 +63,35 @@ void main() {
     expect(tester.takeException(), isNull);
     handle.dispose();
   });
+
+  testWidgets('con texto al 200 % la leyenda va debajo y no desborda', (
+    WidgetTester tester,
+  ) async {
+    await _pump(
+      tester,
+      SizedBox(
+        width: 328,
+        child: AllocationDonut(
+          id: 'test_allocation_chart',
+          currency: Currency.cop,
+          semanticLabel: 'Distribución',
+          slices: <AllocationSlice>[
+            AllocationSlice(
+              id: 'test_allocation_stock_text',
+              label: 'Acciones',
+              percent: Decimal.parse('28.62'),
+            ),
+            AllocationSlice(
+              id: 'test_allocation_cash_text',
+              label: 'Efectivo',
+              percent: Decimal.parse('71.38'),
+            ),
+          ],
+        ),
+      ),
+      textScale: 2,
+    );
+
+    expect(tester.takeException(), isNull);
+  });
 }

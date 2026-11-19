@@ -68,52 +68,67 @@ class AllocationDonut extends StatelessWidget {
     ];
     final double size = compact ? 88 : 132;
     final bool still = MediaQuery.disableAnimationsOf(context);
+    final Widget donut = ExcludeSemantics(
+      child: SizedBox.square(
+        dimension: size,
+        child: PieChart(
+          duration: still ? Duration.zero : const Duration(milliseconds: 200),
+          curve: AppDurations.curve,
+          PieChartData(
+            startDegreeOffset: -90,
+            sectionsSpace: 2,
+            centerSpaceRadius: size * 0.3,
+            pieTouchData: PieTouchData(enabled: false),
+            sections: <PieChartSectionData>[
+              for (int index = 0; index < slices.length; index++)
+                PieChartSectionData(
+                  value: slices[index].percent.toDouble(),
+                  color: palette[index % palette.length],
+                  radius: size * 0.18,
+                  showTitle: false,
+                ),
+            ],
+          ),
+        ),
+      ),
+    );
+    final Widget legend = Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        for (int index = 0; index < slices.length; index++)
+          _LegendRow(
+            slice: slices[index],
+            color: palette[index % palette.length],
+            currency: currency,
+          ),
+      ],
+    );
+    final bool largeText = MediaQuery.textScalerOf(context).scale(1) > 1.3;
     return Identified(
       id: id,
       label: semanticLabel,
-      child: Row(
-        children: <Widget>[
-          ExcludeSemantics(
-            child: SizedBox.square(
-              dimension: size,
-              child: PieChart(
-                duration: still
-                    ? Duration.zero
-                    : const Duration(milliseconds: 200),
-                curve: AppDurations.curve,
-                PieChartData(
-                  startDegreeOffset: -90,
-                  sectionsSpace: 2,
-                  centerSpaceRadius: size * 0.3,
-                  pieTouchData: PieTouchData(enabled: false),
-                  sections: <PieChartSectionData>[
-                    for (int index = 0; index < slices.length; index++)
-                      PieChartSectionData(
-                        value: slices[index].percent.toDouble(),
-                        color: palette[index % palette.length],
-                        radius: size * 0.18,
-                        showTitle: false,
-                      ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(width: AppSpacing.md),
-          Expanded(
-            child: Column(
+      child: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          // Con poco ancho o texto grande, la leyenda va debajo de la torta
+          // en vez de al lado, para no recortar etiquetas ni porcentajes.
+          if (largeText || constraints.maxWidth < size + 220) {
+            return Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                for (int index = 0; index < slices.length; index++)
-                  _LegendRow(
-                    slice: slices[index],
-                    color: palette[index % palette.length],
-                    currency: currency,
-                  ),
+                donut,
+                const SizedBox(height: AppSpacing.sm),
+                legend,
               ],
-            ),
-          ),
-        ],
+            );
+          }
+          return Row(
+            children: <Widget>[
+              donut,
+              const SizedBox(width: AppSpacing.md),
+              Expanded(child: legend),
+            ],
+          );
+        },
       ),
     );
   }
@@ -150,6 +165,7 @@ class _LegendRow extends StatelessWidget {
             const SizedBox(width: AppSpacing.xs),
             Text(
               Formatters.share(slice.percent, currency: currency),
+              softWrap: false,
               style: AppTypography.tabular(
                 AppTypography.labelLarge,
               ).copyWith(color: textTheme.titleMedium?.color),

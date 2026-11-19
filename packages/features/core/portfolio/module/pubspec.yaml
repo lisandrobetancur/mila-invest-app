@@ -28,6 +28,7 @@ dependencies:
   stat_tile: 0.1.0
   typing: 0.1.0
   utilities: 0.1.0
+  wallet_typing: 0.1.0
 
 dev_dependencies:
   fake_backend: 0.1.0
