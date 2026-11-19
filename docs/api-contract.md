@@ -1,5 +1,8 @@
 # Contrato con `mila-invest-api`
 
+Backend: repo separado `mila-invest-api` (TypeScript + Fastify + Joi +
+PostgreSQL), base `/api/v1`.
+
 Si el backend real difiere, **manda el backend**: se actualiza este documento
 y `shared/fake_backend` en el mismo PR.
 
@@ -38,9 +41,9 @@ y `shared/fake_backend` en el mismo PR.
 | `POST /orders` | igual que preview (+ `Idempotency-Key`) | 201 `order` |
 | `GET /orders` | `status, cursor, limit` | paginado de `order` |
 | `GET /orders/{id}` | — | `order` |
-| `GET /portfolio` | — | `{ base_currency, total_value, cash_value, invested_value, day_change, day_change_pct, positions: [...], allocation: [{ type, value, pct }] }` |
+| `GET /portfolio` | — | `{ base_currency, total_value, cash_value, invested_value, day_change, day_change_pct, positions: [...], allocation: [{ type, value, pct }], fx_rates_used: [{ from, to, rate, as_of }] }` |
 | `GET /transactions` | `type (DEPOSIT\|BUY\|SELL\|FEE), from, to, cursor, limit` | paginado de `transaction` |
-| `GET /dashboard/summary` | — | `{ portfolio_summary, top_movers: [...], recent_transactions: [...] }` |
+| `GET /dashboard/summary` | — | `{ portfolio_summary, top_movers: { gainers: [...], losers: [...] }, recent_transactions: [...] }` |
 
 ### Formas principales
 
@@ -64,7 +67,7 @@ y `shared/fake_backend` en el mismo PR.
   "created_at": "2026-11-18T14:43:10Z", "filled_at": "2026-11-18T14:43:10Z" }
 
 // transaction
-{ "id": "txn_01H...", "type": "BUY", "amount": "-28860.00", "currency": "COP",
+{ "id": "txn_01H...", "type": "BUY", "amount": "-23860.00", "currency": "COP",
   "description": "Compra 10 ECOPETROL", "order_id": "ord_01H...",
   "created_at": "2026-11-18T14:43:10Z" }
 ```
@@ -90,11 +93,13 @@ Todo error es `application/problem+json`:
 | `AUTH_EMAIL_TAKEN` | 409 | registro |
 | `AUTH_DOCUMENT_TAKEN` | 409 | registro |
 | `AUTH_TOKEN_EXPIRED` | 401 | ruta protegida → refresh |
+| `AUTH_TOKEN_INVALID` | 401 | token ausente o malformado → cerrar sesión |
 | `AUTH_REFRESH_INVALID` | 401 | refresh → cerrar sesión |
 | `INSUFFICIENT_FUNDS` | 422 | preview y orden de compra |
 | `INSUFFICIENT_POSITION` | 422 | preview y orden de venta |
 | `MARKET_CLOSED` | 422 | preview y orden |
 | `INSTRUMENT_NOT_FOUND` | 404 | detalle → vista "no encontrado" |
+| `ORDER_NOT_FOUND` | 404 | detalle de orden → vista "no encontrado" |
 | `IDEMPOTENCY_CONFLICT` | 409 | orden, depósito |
 | `RATE_LIMITED` | 429 | cualquiera |
 | `INTERNAL_ERROR` | 500 | cualquiera |

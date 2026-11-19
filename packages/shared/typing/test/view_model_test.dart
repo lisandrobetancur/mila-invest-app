@@ -61,9 +61,9 @@ void main() {
       'mountedKey detecta que el controller se destruyó en el await',
       () async {
         final ProviderContainer container = ProviderContainer();
-        final _CounterViewModel notifier = container.read(_provider.notifier);
+        final _CounterViewModel notifier = container.read(_provider.notifier)
+          ..start();
 
-        notifier.start();
         await Future<void>.delayed(Duration.zero);
         container.dispose();
         await Future<void>.delayed(Duration.zero);

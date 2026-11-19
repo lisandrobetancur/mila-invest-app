@@ -19,11 +19,15 @@ enum Currency {
   ),
 
   /// Sol peruano.
+  ///
+  /// Se formatea con `es_419`: `intl` no trae símbolos para `es_PE` y el
+  /// fallback a `es` daría `1.234.567,89`, que no es como se escriben los
+  /// montos en Perú (`S/ 1,234,567.89`, §7.3).
   pen(
     code: 'PEN',
     symbol: 'S/',
     displayDecimals: 2,
-    formatLocale: 'es_PE',
+    formatLocale: 'es_419',
     showsCode: false,
   ),
 
