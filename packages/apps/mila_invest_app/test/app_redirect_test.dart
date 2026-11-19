@@ -65,6 +65,77 @@ void main() {
     expect(_resolve('/portfolio', gate: gate, session: session), isNull);
   });
 
+  group('qué se estaciona', () {
+    const List<String> publicRoutes = <String>[
+      '/',
+      '/onboarding',
+      '/login',
+      '/register',
+    ];
+    const List<String> protectedRoutes = <String>[
+      '/home',
+      '/market/instrument/ECOPETROL-CO',
+      '/wallet',
+      '/activity',
+    ];
+
+    for (final bool ready in <bool>[false, true]) {
+      final String gateLabel = ready ? 'gate abierto' : 'gate cerrado';
+
+      for (final String route in publicRoutes) {
+        test('$route ($gateLabel) no se estaciona', () {
+          final BootstrapGate gate = BootstrapGate();
+          if (ready) {
+            gate.markReady();
+          }
+
+          _resolve(route, gate: gate);
+
+          expect(gate.parkedLocation, isNull);
+        });
+      }
+
+      for (final String route in protectedRoutes) {
+        test('$route ($gateLabel) se estaciona', () {
+          final BootstrapGate gate = BootstrapGate();
+          if (ready) {
+            gate.markReady();
+          }
+
+          _resolve(route, gate: gate);
+
+          expect(gate.parkedLocation, route);
+        });
+      }
+    }
+  });
+
+  test('abrir /login mientras arranca y autenticarse va al inicio, no al '
+      'login', () {
+    final BootstrapGate gate = BootstrapGate();
+    const SessionState session = SessionState.authenticated(_user);
+
+    expect(_resolve('/login', gate: gate), '/');
+    gate.markReady();
+    expect(_resolve('/', gate: gate), '/login');
+    expect(_resolve('/login', gate: gate), isNull);
+    expect(_resolve('/login', gate: gate, session: session), '/home');
+  });
+
+  test('un deep link protegido abierto mientras arranca vuelve después del '
+      'login', () {
+    final BootstrapGate gate = BootstrapGate();
+    const SessionState session = SessionState.authenticated(_user);
+
+    expect(_resolve('/market/instrument/ISA-CO', gate: gate), '/');
+    gate.markReady();
+    expect(_resolve('/', gate: gate), '/login');
+    expect(
+      _resolve('/login', gate: gate, session: session),
+      '/market/instrument/ISA-CO',
+    );
+  });
+
   test('un deep link con el scheme propio se normaliza', () {
     final BootstrapGate gate = BootstrapGate()..markReady();
 

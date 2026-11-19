@@ -11,6 +11,7 @@ import 'package:mila_invest_app/config/app_config.dart';
 import 'package:mila_invest_app/di/app_overrides.dart';
 import 'package:mila_invest_app/i18n/mila_invest_translations_loader.dart';
 import 'package:mila_invest_app/mila_invest_app.dart';
+import 'package:mila_invest_app/router/shell_locations.dart';
 import 'package:mila_invest_app/shell_ids.dart';
 import 'package:navigator/navigator.dart';
 import 'package:orders_constants/orders_constants.dart';
@@ -198,6 +199,34 @@ void main() {
 
     _expectView(MarketIds.detailView);
     expect(_label(tester, MarketIds.detailTickerText), 'BAP');
+    handle.dispose();
+  });
+
+  testWidgets('abrir la app directo en /login y autenticarse termina en '
+      '/home', (WidgetTester tester) async {
+    final SemanticsHandle handle = tester.ensureSemantics();
+    SharedPreferences.setMockInitialValues(<String, Object>{
+      'mila_invest.onboarding_seen': true,
+    });
+    tester.binding.platformDispatcher.defaultRouteNameTestValue =
+        AuthRoutes.loginPath;
+    addTearDown(
+      tester.binding.platformDispatcher.clearDefaultRouteNameTestValue,
+    );
+    final ProviderContainer container = await _pumpApp(tester);
+
+    await _loginDemo(tester);
+
+    _expectView(DashboardIds.homeView);
+    expect(
+      container
+          .read(goRouterProvider)
+          .routerDelegate
+          .currentConfiguration
+          .uri
+          .toString(),
+      ShellLocations.home,
+    );
     handle.dispose();
   });
 

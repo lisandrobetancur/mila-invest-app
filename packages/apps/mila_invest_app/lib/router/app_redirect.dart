@@ -41,9 +41,12 @@ class AppRedirect {
     final bool isAuth = _authPaths.contains(path);
     final bool isPublic = isSplash || isOnboarding || isAuth;
 
+    // Solo se estacionan rutas protegidas, en esta rama y en la de abajo:
+    // si se estacionara una pública (p. ej. `/login`), `take()` la devolvería
+    // después de autenticarse y el usuario quedaría logueado en el login.
     if (!gate.isReady) {
-      if (isSplash) {
-        return null;
+      if (isPublic) {
+        return isSplash ? null : AppCrossRoutes.splashPath;
       }
       gate.park(location);
       return AppCrossRoutes.splashPath;
