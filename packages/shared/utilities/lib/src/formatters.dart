@@ -81,6 +81,11 @@ abstract final class Formatters {
     return _maskChar * (value.length - 4) + value.substring(value.length - 4);
   }
 
+  /// Documento enmascarado a partir de sus últimos 4 caracteres.
+  ///
+  /// Después del registro el cliente solo conoce esos 4 (`••••••5678`).
+  static String maskDocumentTail(String last4) => _maskChar * 6 + last4;
+
   /// Formatea un monto con el símbolo, los decimales y el código de su
   /// moneda (§7.3).
   ///

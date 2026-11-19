@@ -8,6 +8,11 @@ environment:
 
 workspace:
   - packages/development/lint
+  - packages/features/generic/app_cross/constants
+  - packages/features/generic/app_cross/module
+  - packages/features/generic/app_cross/typing
+  - packages/features/generic/authentication/constants
+  - packages/features/generic/authentication/typing
   - packages/shared/fake_backend
   - packages/shared/navigator
   - packages/shared/network

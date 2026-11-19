@@ -27,6 +27,21 @@ class _CounterViewModel extends ViewModel<int> {
   });
 }
 
+class _ScreenViewModel extends AutoDisposeViewModel<int> {
+  static int disposed = 0;
+
+  @override
+  int initState() => 0;
+
+  @override
+  void postInit() => ref.onDispose(() => disposed++);
+
+  void increment() => state = state + 1;
+}
+
+final AutoDisposeNotifierProvider<_ScreenViewModel, int> _screenProvider =
+    NotifierProvider.autoDispose<_ScreenViewModel, int>(_ScreenViewModel.new);
+
 final NotifierProvider<_CounterViewModel, int> _provider =
     NotifierProvider<_CounterViewModel, int>(_CounterViewModel.new);
 
@@ -71,5 +86,26 @@ void main() {
         expect(notifier.calls, contains('abandonado'));
       },
     );
+  });
+
+  group('AutoDisposeViewModel', () {
+    test('se destruye cuando nadie lo observa y avisa en onDispose', () async {
+      final ProviderContainer container = ProviderContainer();
+      addTearDown(container.dispose);
+      _ScreenViewModel.disposed = 0;
+
+      final ProviderSubscription<int> subscription = container.listen<int>(
+        _screenProvider,
+        (int? previous, int next) {},
+      );
+      container.read(_screenProvider.notifier).increment();
+      expect(container.read(_screenProvider), 1);
+
+      subscription.close();
+      await container.pump();
+
+      expect(_ScreenViewModel.disposed, 1);
+      expect(container.read(_screenProvider), 0);
+    });
   });
 }

@@ -1,6 +1,7 @@
 /// Tokens, temas y primitivas de MILA Invest.
 library;
 
+export 'src/a11y/locale_context.dart';
 export 'src/a11y/semantic_labels.dart';
 export 'src/primitives/app_badge.dart';
 export 'src/primitives/app_banner.dart';

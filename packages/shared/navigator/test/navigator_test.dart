@@ -84,17 +84,29 @@ void main() {
       expect(gate.take(), '/market');
     });
 
-    test('recuerda que el bootstrap terminó y se resetea en logout', () {
+    test('recuerda que el bootstrap terminó', () {
       final BootstrapGate gate = BootstrapGate();
 
       expect(gate.isReady, isFalse);
-      gate
-        ..markReady()
-        ..park('/portfolio')
-        ..reset();
+      gate.markReady();
 
       expect(gate.isReady, isTrue);
+    });
+
+    test('tras un logout no estaciona la pantalla desde la que se salió', () {
+      final BootstrapGate gate = BootstrapGate()
+        ..park('/portfolio')
+        ..forget(ignoring: '/settings')
+        ..park('/settings')
+        ..park('/settings');
+
       expect(gate.parkedLocation, isNull);
+
+      gate.park('/market/instrument/BAP-PE');
+      expect(gate.take(), '/market/instrument/BAP-PE');
+
+      gate.park('/settings');
+      expect(gate.take(), '/settings');
     });
   });
 
