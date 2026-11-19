@@ -4,6 +4,7 @@ import 'package:app_cross/app_cross.dart';
 import 'package:app_cross_typing/app_cross_typing.dart';
 import 'package:authentication/authentication.dart';
 import 'package:authentication_typing/authentication_typing.dart';
+import 'package:dashboard/dashboard.dart';
 import 'package:design_system/design_system.dart';
 import 'package:fake_backend/fake_backend.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +13,7 @@ import 'package:market_typing/market_typing.dart';
 import 'package:network/network.dart';
 import 'package:orders/orders.dart';
 import 'package:portfolio/portfolio.dart';
+import 'package:transactions/transactions.dart';
 import 'package:typing/typing.dart';
 import 'package:utilities/utilities.dart';
 import 'package:wallet/wallet.dart';
@@ -76,4 +78,6 @@ List<Override> buildAppOverrides(AppConfig config) => <Override>[
   ...ordersOverrides,
   ...walletOverrides,
   ...portfolioOverrides,
+  ...transactionsOverrides,
+  ...dashboardOverrides,
 ];

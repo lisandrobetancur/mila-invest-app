@@ -27,10 +27,16 @@ class AppNavigationShell extends StatelessWidget {
   final StatefulNavigationShell shell;
 
   static const List<_Tab> _tabs = <_Tab>[
+    _Tab(id: ShellIds.homeTab, icon: AppIcons.home, labelKey: 'shell.nav.home'),
     _Tab(
       id: ShellIds.marketTab,
       icon: AppIcons.market,
       labelKey: 'shell.nav.market',
+    ),
+    _Tab(
+      id: ShellIds.portfolioTab,
+      icon: AppIcons.portfolio,
+      labelKey: 'shell.nav.portfolio',
     ),
     _Tab(
       id: ShellIds.activityTab,
@@ -57,7 +63,10 @@ class AppNavigationShell extends StatelessWidget {
                     onSelect: _select,
                   ),
                   const VerticalDivider(width: 1),
-                  Expanded(child: shell),
+                  // El navigator de cada rama pone un BlockSemantics que oculta
+                  // todo lo pintado antes en el mismo contenedor semántico.
+                  // Con un contenedor propio, el rail conserva sus nodos.
+                  Expanded(child: Semantics(container: true, child: shell)),
                 ],
               )
             : shell,

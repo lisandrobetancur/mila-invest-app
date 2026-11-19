@@ -2,12 +2,15 @@ import 'package:app_cross/app_cross.dart';
 import 'package:app_cross_typing/app_cross_typing.dart';
 import 'package:authentication/authentication.dart';
 import 'package:authentication_typing/authentication_typing.dart';
+import 'package:dashboard/dashboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:market/market.dart';
 import 'package:navigator/navigator.dart';
 import 'package:orders/orders.dart';
+import 'package:portfolio/portfolio.dart';
+import 'package:transactions/transactions.dart';
 import 'package:wallet/wallet.dart';
 
 import 'app_navigation_shell.dart';
@@ -21,6 +24,10 @@ class _RouterRefresh extends ChangeNotifier {
 
 final GlobalKey<NavigatorState> _rootNavigatorKey = GlobalKey<NavigatorState>(
   debugLabel: 'root',
+);
+
+StatefulShellBranch _branch(List<AppRoute> routes) => StatefulShellBranch(
+  routes: <RouteBase>[for (final AppRoute route in routes) route.toGoRoute()],
 );
 
 /// Construye el router de la app con las rutas que aporta cada feature.
@@ -69,16 +76,10 @@ final Override goRouterProviderOverride = goRouterProvider.overrideWith((
               StatefulNavigationShell shell,
             ) => AppNavigationShell(shell: shell),
         branches: <StatefulShellBranch>[
-          StatefulShellBranch(
-            routes: <RouteBase>[
-              for (final AppRoute route in marketShellRoutes) route.toGoRoute(),
-            ],
-          ),
-          StatefulShellBranch(
-            routes: <RouteBase>[
-              for (final AppRoute route in ordersShellRoutes) route.toGoRoute(),
-            ],
-          ),
+          _branch(dashboardShellRoutes),
+          _branch(marketShellRoutes),
+          _branch(portfolioShellRoutes),
+          _branch(<AppRoute>[...transactionsShellRoutes, ...ordersShellRoutes]),
         ],
       ),
     ],
