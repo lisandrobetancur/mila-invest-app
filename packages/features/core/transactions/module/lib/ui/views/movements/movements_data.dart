@@ -126,30 +126,37 @@ class _MovementTile extends StatelessWidget {
           ),
           const SizedBox(width: AppSpacing.sm),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+            child: Wrap(
+              alignment: WrapAlignment.spaceBetween,
+              crossAxisAlignment: WrapCrossAlignment.center,
+              spacing: AppSpacing.xs,
               children: <Widget>[
-                Text(
-                  context.tr('transactions.type.${transaction.type.name}'),
-                  style: theme.textTheme.titleMedium,
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Text(
+                      context.tr('transactions.type.${transaction.type.name}'),
+                      style: theme.textTheme.titleMedium,
+                    ),
+                    Identified(
+                      id: TransactionsIds.listItemDescriptionText(id),
+                      child: Text(
+                        '${transaction.description} · '
+                        '${Formatters.time(transaction.createdAt, country: zone, locale: context.languageCode)}',
+                        style: theme.textTheme.bodySmall,
+                      ),
+                    ),
+                  ],
                 ),
-                Identified(
-                  id: TransactionsIds.listItemDescriptionText(id),
-                  child: Text(
-                    '${transaction.description} · '
-                    '${Formatters.time(transaction.createdAt, country: zone, locale: context.languageCode)}',
-                    style: theme.textTheme.bodySmall,
-                  ),
+                MoneyText(
+                  id: TransactionsIds.listItemAmountText(id),
+                  money: transaction.amount,
+                  signed: true,
+                  size: MoneyTextSize.compact,
                 ),
               ],
             ),
-          ),
-          const SizedBox(width: AppSpacing.xs),
-          MoneyText(
-            id: TransactionsIds.listItemAmountText(id),
-            money: transaction.amount,
-            signed: true,
-            size: MoneyTextSize.compact,
           ),
         ],
       ),

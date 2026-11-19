@@ -10,6 +10,7 @@ workspace:
   - packages/apps/mila_invest_app
   - packages/development/lint
   - packages/features/core/dashboard/constants
+  - packages/features/core/dashboard/module
   - packages/features/core/dashboard/typing
   - packages/features/core/market/constants
   - packages/features/core/market/module
