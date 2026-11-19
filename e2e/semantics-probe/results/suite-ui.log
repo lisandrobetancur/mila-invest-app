@@ -1,0 +1,84 @@
+npm notice run mila-invest-ui-e2e@0.1.0 npx
+npm notice run 'playwright' test -c /private/tmp/claude-501/-Users-lisandro--claude-spares-spare-JYEHtC/6d761848-d15d-47f3-842d-eda591447499/scratchpad/suite-ui.config.ts
+
+Running 380 tests using 1 worker
+
+[1/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:20:7 › Característica: Cerrar sesión › Escenario: cierra la sesión confirmando el diálogo @acceso
+[2/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:33:7 › Característica: Cerrar sesión › Escenario: puede arrepentirse y seguir dentro @acceso
+[3/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:12:7 › Característica: Iniciar sesión › Escenario: entra con la cuenta demo @smoke @acceso
+[4/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:26:7 › Característica: Iniciar sesión › Escenario: no entra con una contraseña incorrecta @acceso
+[5/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:29:7 › Característica: Crear una cuenta › Escenario: un usuario nuevo queda dentro de la app @acceso
+[6/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:41:7 › Característica: Crear una cuenta › Escenario: el país es obligatorio @acceso
+[7/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:66:7 › Característica: Crear una cuenta › Escenario: hay que aceptar el aviso de simulación @acceso
+[8/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:82:7 › Característica: Crear una cuenta › Escenario: la contraseña tiene que cumplir los requisitos @acceso
+[9/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en CO se pide cédula @acceso
+[10/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en MX se pide CURP @acceso
+[11/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en PE se pide DNI @acceso
+[12/380] [web-movil] › test/specs/dinero/depositar.spec.ts:28:7 › Característica: Depositar dinero virtual › Escenario: deposita un monto sugerido @smoke @dinero
+[13/380] [web-movil] › test/specs/dinero/depositar.spec.ts:49:7 › Característica: Depositar dinero virtual › Escenario: un monto en cero no se deposita @dinero
+[14/380] [web-movil] › test/specs/inversion/comprar-acciones.spec.ts:23:7 › Característica: Comprar acciones a mercado › Escenario: compra con saldo suficiente @smoke @inversion
+[15/380] [web-movil] › test/specs/inversion/comprar-acciones.spec.ts:37:7 › Característica: Comprar acciones a mercado › Escenario: ve la comisión y el total antes de confirmar @smoke @inversion
+[16/380] [web-movil] › test/specs/inversion/vender-acciones.spec.ts:24:7 › Característica: Vender acciones a mercado › Escenario: vende una parte de su posición en ECOPETROL @inversion
+[17/380] [web-movil] › test/specs/inversion/vender-acciones.spec.ts:39:7 › Característica: Vender acciones a mercado › Escenario: no puede vender más de lo que tiene @inversion
+[18/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:19:7 › Característica: Ver el detalle de un instrumento › Escenario: abre el detalle desde la lista @mercado
+[19/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:31:7 › Característica: Ver el detalle de un instrumento › Escenario: cambia el rango del gráfico @mercado
+[20/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:44:7 › Característica: Ver el detalle de un instrumento › Escenario: ve su posición en un instrumento que ya tiene @mercado
+[21/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:20:7 › Característica: Explorar el mercado › Escenario: filtra por país y la URL lo refleja @mercado
+[22/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:34:7 › Característica: Explorar el mercado › Escenario: filtra por tipo y la URL lo refleja @mercado
+[23/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:47:7 › Característica: Explorar el mercado › Escenario: una búsqueda sin resultados ofrece limpiar los filtros @mercado
+[24/380] [web-movil] › test/specs/plataforma/ajustes.spec.ts:28:7 › Característica: Ajustar la app › Escenario: cambia el idioma sin reiniciar y sin tocar el formato de los montos @plataforma
+[25/380] [web-movil] › test/specs/plataforma/ajustes.spec.ts:45:7 › Característica: Ajustar la app › Escenario: cambia el tema sin reiniciar @plataforma
+[26/380] [web-movil] › test/specs/plataforma/deep-links.spec.ts:17:7 › Característica: Abrir la app por un deep link › Escenario: un deep link sin sesión pasa por el login y vuelve al instrumento @plataforma
+[27/380] [web-movil] › test/specs/plataforma/deep-links.spec.ts:35:7 › Característica: Abrir la app por un deep link › Escenario: un instrumento que no existe muestra "no encontrado" @plataforma
+[28/380] [web-movil] › test/specs/plataforma/no-encontrado.spec.ts:19:7 › Característica: Rutas que no existen › Escenario: una ruta desconocida muestra "no encontrado" @plataforma
+[29/380] [web-movil] › test/specs/seguimiento/actividad.spec.ts:24:7 › Característica: Ver la actividad › Escenario: la compra y su comisión quedan en los movimientos @seguimiento
+[30/380] [web-movil] › test/specs/seguimiento/actividad.spec.ts:47:7 › Característica: Ver la actividad › Escenario: el historial muestra la orden rechazada de la cuenta demo @seguimiento
+[31/380] [web-movil] › test/specs/seguimiento/inicio.spec.ts:26:7 › Característica: Ver el inicio › Escenario: resume la cuenta y los que más se mueven @seguimiento
+[32/380] [web-movil] › test/specs/seguimiento/inicio.spec.ts:44:7 › Característica: Ver el inicio › Escenario: el inicio se actualiza después de una compra @seguimiento
+[33/380] [web-movil] › test/specs/seguimiento/portafolio.spec.ts:13:7 › Característica: Ver el portafolio › Escenario: muestra el total, el efectivo y lo invertido @smoke @seguimiento
+[34/380] [web-movil] › test/specs/seguimiento/portafolio.spec.ts:34:7 › Característica: Ver el portafolio › Escenario: muestra una línea por cada posición @seguimiento
+[35/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:41:7 › Característica: Empezar sin saldo ni inversiones › Escenario: el inicio invita a hacer el primer depósito @seed-empty @seguimiento
+[36/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:53:7 › Característica: Empezar sin saldo ni inversiones › Escenario: el portafolio invita a explorar el mercado @seed-empty @seguimiento
+[37/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:66:7 › Característica: Empezar sin saldo ni inversiones › Escenario: la actividad está vacía @seed-empty @seguimiento
+[38/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:84:7 › Característica: Empezar sin saldo ni inversiones › Escenario: la billetera está sin saldo @seed-empty @dinero
+[39/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:20:7 › Característica: Cerrar sesión › Escenario: cierra la sesión confirmando el diálogo @acceso
+[40/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:33:7 › Característica: Cerrar sesión › Escenario: puede arrepentirse y seguir dentro @acceso
+[41/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:12:7 › Característica: Iniciar sesión › Escenario: entra con la cuenta demo @smoke @acceso
+[42/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:26:7 › Característica: Iniciar sesión › Escenario: no entra con una contraseña incorrecta @acceso
+[43/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:29:7 › Característica: Crear una cuenta › Escenario: un usuario nuevo queda dentro de la app @acceso
+[44/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:41:7 › Característica: Crear una cuenta › Escenario: el país es obligatorio @acceso
+[45/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:66:7 › Característica: Crear una cuenta › Escenario: hay que aceptar el aviso de simulación @acceso
+[46/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:82:7 › Característica: Crear una cuenta › Escenario: la contraseña tiene que cumplir los requisitos @acceso
+[47/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en CO se pide cédula @acceso
+[48/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en MX se pide CURP @acceso
+[49/380] [web-movil] › test/specs/acceso/registrarse.spec.ts:108:15 › Característica: Crear una cuenta › Esquema del escenario: cada país pide su documento › Escenario: en PE se pide DNI @acceso
+[50/380] [web-movil] › test/specs/dinero/depositar.spec.ts:28:7 › Característica: Depositar dinero virtual › Escenario: deposita un monto sugerido @smoke @dinero
+[51/380] [web-movil] › test/specs/dinero/depositar.spec.ts:49:7 › Característica: Depositar dinero virtual › Escenario: un monto en cero no se deposita @dinero
+[52/380] [web-movil] › test/specs/inversion/comprar-acciones.spec.ts:23:7 › Característica: Comprar acciones a mercado › Escenario: compra con saldo suficiente @smoke @inversion
+[53/380] [web-movil] › test/specs/inversion/comprar-acciones.spec.ts:37:7 › Característica: Comprar acciones a mercado › Escenario: ve la comisión y el total antes de confirmar @smoke @inversion
+[54/380] [web-movil] › test/specs/inversion/vender-acciones.spec.ts:24:7 › Característica: Vender acciones a mercado › Escenario: vende una parte de su posición en ECOPETROL @inversion
+[55/380] [web-movil] › test/specs/inversion/vender-acciones.spec.ts:39:7 › Característica: Vender acciones a mercado › Escenario: no puede vender más de lo que tiene @inversion
+[56/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:19:7 › Característica: Ver el detalle de un instrumento › Escenario: abre el detalle desde la lista @mercado
+[57/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:31:7 › Característica: Ver el detalle de un instrumento › Escenario: cambia el rango del gráfico @mercado
+[58/380] [web-movil] › test/specs/mercado/detalle-de-instrumento.spec.ts:44:7 › Característica: Ver el detalle de un instrumento › Escenario: ve su posición en un instrumento que ya tiene @mercado
+[59/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:20:7 › Característica: Explorar el mercado › Escenario: filtra por país y la URL lo refleja @mercado
+[60/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:34:7 › Característica: Explorar el mercado › Escenario: filtra por tipo y la URL lo refleja @mercado
+[61/380] [web-movil] › test/specs/mercado/explorar-mercado.spec.ts:47:7 › Característica: Explorar el mercado › Escenario: una búsqueda sin resultados ofrece limpiar los filtros @mercado
+[62/380] [web-movil] › test/specs/plataforma/ajustes.spec.ts:28:7 › Característica: Ajustar la app › Escenario: cambia el idioma sin reiniciar y sin tocar el formato de los montos @plataforma
+[63/380] [web-movil] › test/specs/plataforma/ajustes.spec.ts:45:7 › Característica: Ajustar la app › Escenario: cambia el tema sin reiniciar @plataforma
+[64/380] [web-movil] › test/specs/plataforma/deep-links.spec.ts:17:7 › Característica: Abrir la app por un deep link › Escenario: un deep link sin sesión pasa por el login y vuelve al instrumento @plataforma
+[65/380] [web-movil] › test/specs/plataforma/deep-links.spec.ts:35:7 › Característica: Abrir la app por un deep link › Escenario: un instrumento que no existe muestra "no encontrado" @plataforma
+[66/380] [web-movil] › test/specs/plataforma/no-encontrado.spec.ts:19:7 › Característica: Rutas que no existen › Escenario: una ruta desconocida muestra "no encontrado" @plataforma
+[67/380] [web-movil] › test/specs/seguimiento/actividad.spec.ts:24:7 › Característica: Ver la actividad › Escenario: la compra y su comisión quedan en los movimientos @seguimiento
+[68/380] [web-movil] › test/specs/seguimiento/actividad.spec.ts:47:7 › Característica: Ver la actividad › Escenario: el historial muestra la orden rechazada de la cuenta demo @seguimiento
+[69/380] [web-movil] › test/specs/seguimiento/inicio.spec.ts:26:7 › Característica: Ver el inicio › Escenario: resume la cuenta y los que más se mueven @seguimiento
+[70/380] [web-movil] › test/specs/seguimiento/inicio.spec.ts:44:7 › Característica: Ver el inicio › Escenario: el inicio se actualiza después de una compra @seguimiento
+[71/380] [web-movil] › test/specs/seguimiento/portafolio.spec.ts:13:7 › Característica: Ver el portafolio › Escenario: muestra el total, el efectivo y lo invertido @smoke @seguimiento
+[72/380] [web-movil] › test/specs/seguimiento/portafolio.spec.ts:34:7 › Característica: Ver el portafolio › Escenario: muestra una línea por cada posición @seguimiento
+[73/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:41:7 › Característica: Empezar sin saldo ni inversiones › Escenario: el inicio invita a hacer el primer depósito @seed-empty @seguimiento
+[74/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:53:7 › Característica: Empezar sin saldo ni inversiones › Escenario: el portafolio invita a explorar el mercado @seed-empty @seguimiento
+[75/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:66:7 › Característica: Empezar sin saldo ni inversiones › Escenario: la actividad está vacía @seed-empty @seguimiento
+[76/380] [web-movil] › test/specs/seguimiento/usuario-nuevo.spec.ts:84:7 › Característica: Empezar sin saldo ni inversiones › Escenario: la billetera está sin saldo @seed-empty @dinero
+[77/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:20:7 › Característica: Cerrar sesión › Escenario: cierra la sesión confirmando el diálogo @acceso
+[78/380] [web-movil] › test/specs/acceso/cerrar-sesion.spec.ts:33:7 › Característica: Cerrar sesión › Escenario: puede arrepentirse y seguir dentro @acceso
+[79/380] [web-movil] › test/specs/acceso/iniciar-sesion.spec.ts:12:7 › Característica: Iniciar sesión › Escenario: entra con la cuenta demo @smoke @acceso

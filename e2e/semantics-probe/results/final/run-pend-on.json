@@ -1,0 +1,1146 @@
+{
+  "config": {
+    "argv": [
+      "/Users/lisandro/.nvm/versions/node/v24.15.0/bin/node",
+      "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.pendientes.config.ts",
+      "-g",
+      "F6|D2b",
+      "--project=on",
+      "--output=test-results/final-pend-on"
+    ],
+    "configFile": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/playwright.pendientes.config.ts",
+    "rootDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "on"
+        },
+        "id": "on",
+        "name": "on",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "off"
+        },
+        "id": "off",
+        "name": "off",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on",
+        "repeatEach": 5,
+        "retries": 0,
+        "metadata": {
+          "mode": "on"
+        },
+        "name": "on",
+        "testDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "snapshotDir": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "browserName": "chromium",
+          "trace": "on",
+          "deviceScaleFactor": 1,
+          "locale": "es",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "baseURL": "http://127.0.0.1:8081"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "on"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results/final/run-pend-on.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "d2b-saldo-insuficiente.spec.ts",
+      "file": "d2b-saldo-insuficiente.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "D2b ids del ticket con saldo insuficiente",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 10002,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"orders_ticket_low_balance_text\"\u001b[39m\nReceived array: \u001b[31m[\"orders_ticket_view\", \"orders_ticket_simulated_text\", \"orders_ticket_close_icon_button\", \"orders_ticket_state_data\", \"orders_ticket_instrument_text\", \"orders_ticket_price_text\", \"orders_ticket_side_menu\", \"orders_ticket_side_buy_segment\", \"orders_ticket_side_sell_segment\", \"orders_ticket_quantity_decrease_stepper\", …]\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"orders_ticket_low_balance_text\"\u001b[39m\nReceived array: \u001b[31m[\"orders_ticket_view\", \"orders_ticket_simulated_text\", \"orders_ticket_close_icon_button\", \"orders_ticket_state_data\", \"orders_ticket_instrument_text\", \"orders_ticket_price_text\", \"orders_ticket_side_menu\", \"orders_ticket_side_buy_segment\", \"orders_ticket_side_sell_segment\", \"orders_ticket_quantity_decrease_stepper\", …]\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts:34:29",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                      "column": 29,
+                      "line": 34
+                    },
+                    "snippet": "  32 |     fs.writeFileSync(path.join(dir, 'D2b.json'), JSON.stringify(porCantidad, null, 1));\n  33 |     const todos = new Set(Object.values(porCantidad).flat());\n> 34 |     expect.soft([...todos]).toContain('orders_ticket_low_balance_text');\n     |                             ^\n  35 |     expect.soft([...todos]).toContain('orders_ticket_deposit_button');\n  36 | });\n  37 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                        "column": 29,
+                        "line": 34
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"orders_ticket_low_balance_text\"\u001b[39m\nReceived array: \u001b[31m[\"orders_ticket_view\", \"orders_ticket_simulated_text\", \"orders_ticket_close_icon_button\", \"orders_ticket_state_data\", \"orders_ticket_instrument_text\", \"orders_ticket_price_text\", \"orders_ticket_side_menu\", \"orders_ticket_side_buy_segment\", \"orders_ticket_side_sell_segment\", \"orders_ticket_quantity_decrease_stepper\", …]\u001b[39m\n\n  32 |     fs.writeFileSync(path.join(dir, 'D2b.json'), JSON.stringify(porCantidad, null, 1));\n  33 |     const todos = new Set(Object.values(porCantidad).flat());\n> 34 |     expect.soft([...todos]).toContain('orders_ticket_low_balance_text');\n     |                             ^\n  35 |     expect.soft([...todos]).toContain('orders_ticket_deposit_button');\n  36 | });\n  37 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts:34:29"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:47:39.197Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                    "column": 29,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0b2c14e7cdf253504905-f91f402ab619f40d83d7",
+          "file": "d2b-saldo-insuficiente.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "D2b ids del ticket con saldo insuficiente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "inventario: solo ON, una pasada",
+                  "location": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                    "line": 13,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 51,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:05.469Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "inventario: solo ON, una pasada",
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                        "line": 13,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on-repeat1/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0b2c14e7cdf253504905-d9e79c680943768313bf",
+          "file": "d2b-saldo-insuficiente.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "D2b ids del ticket con saldo insuficiente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "inventario: solo ON, una pasada",
+                  "location": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                    "line": 13,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 50,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:22.391Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "inventario: solo ON, una pasada",
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                        "line": 13,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on-repeat2/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0b2c14e7cdf253504905-662e1d9c87f2bdfd1015",
+          "file": "d2b-saldo-insuficiente.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "D2b ids del ticket con saldo insuficiente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "inventario: solo ON, una pasada",
+                  "location": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                    "line": 13,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 43,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:38.309Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "inventario: solo ON, una pasada",
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                        "line": 13,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on-repeat3/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0b2c14e7cdf253504905-c611f3e9ee9a102c09e9",
+          "file": "d2b-saldo-insuficiente.spec.ts",
+          "line": 12,
+          "column": 5
+        },
+        {
+          "title": "D2b ids del ticket con saldo insuficiente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "inventario: solo ON, una pasada",
+                  "location": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                    "line": 13,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 49,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:54.101Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "inventario: solo ON, una pasada",
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/d2b-saldo-insuficiente.spec.ts",
+                        "line": 13,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/d2b-saldo-insuficiente-D2b-94b89-cket-con-saldo-insuficiente-on-repeat4/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "0b2c14e7cdf253504905-58886d98de434ed5efd1",
+          "file": "d2b-saldo-insuficiente.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "f-issues-abiertos.spec.ts",
+      "file": "f-issues-abiertos.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6319,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:47:49.690Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6431450a41b326b2a1c3",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8359,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:47:56.517Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-2301916b88b55240ceca",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6254,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:05.618Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-178641d8efbe326c9511",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9506,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:12.300Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat1/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat1/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-f0ee71a2ae2952ff34d2",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6334,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:22.539Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat2/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat2/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-3fa901b76635562b8dc1",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8451,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:29.294Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat2/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat2/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-850478d7a3952500f4bf",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6331,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:38.445Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat3/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat3/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-cbe417af95a16b4bdc22",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8332,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:45.198Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat3/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat3/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-6b9977253e110cb4837b",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (30 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6178,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"3\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:48:54.246Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat4/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--on-repeat4/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-a9a00d9618b9a21dc350",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        },
+        {
+          "title": "F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper \"+\" (250 ms entre taps)",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "on",
+              "projectName": "on",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 9362,
+                  "error": {
+                    "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m",
+                    "stack": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58",
+                    "location": {
+                      "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                      "column": 58,
+                      "line": 210
+                    },
+                    "snippet": "  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                        "column": 58,
+                        "line": 210
+                      },
+                      "message": "Error: cantidad inicial 1 + 10 taps\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"11\"\u001b[39m\nReceived: \u001b[31m\"6\"\u001b[39m\n\n  208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });\n  209 |         if (!d.on) expect(apagado).toBe(true);\n> 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');\n      |                                                          ^\n  211 |     });\n  212 | }\n  213 |\n    at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-19T21:49:00.850Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat4/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/test-results/final-pend-on/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--on-repeat4/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts",
+                    "column": 58,
+                    "line": 210
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "418edc8a04510d5d66c8-e07bb5c972209a30662e",
+          "file": "f-issues-abiertos.spec.ts",
+          "line": 187,
+          "column": 9
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-19T21:47:38.964Z",
+    "duration": 91657.66,
+    "expected": 0,
+    "skipped": 4,
+    "unexpected": 11,
+    "flaky": 0
+  }
+}

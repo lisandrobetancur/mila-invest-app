@@ -1,0 +1,323 @@
+npm notice run mila-invest-semantics-probe@0.0.1 npx
+npm notice run 'playwright' test --config playwright.pendientes.config.ts -g F6|D2b --project=off --output=test-results/final-pend-off
+
+Running 15 tests using 1 worker
+
+[1/15] [off] › pendientes/d2b-saldo-insuficiente.spec.ts:12:5 › D2b ids del ticket con saldo insuficiente
+[2/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  1) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[3/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  2) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[4/15] [off] › pendientes/d2b-saldo-insuficiente.spec.ts:12:5 › D2b ids del ticket con saldo insuficiente
+[5/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  3) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[6/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  4) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat1/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[7/15] [off] › pendientes/d2b-saldo-insuficiente.spec.ts:12:5 › D2b ids del ticket con saldo insuficiente
+[8/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  5) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat2/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[9/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  6) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat2/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat2/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat2/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[10/15] [off] › pendientes/d2b-saldo-insuficiente.spec.ts:12:5 › D2b ids del ticket con saldo insuficiente
+[11/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  7) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat3/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[12/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  8) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat3/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat3/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat3/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[13/15] [off] › pendientes/d2b-saldo-insuficiente.spec.ts:12:5 › D2b ids del ticket con saldo insuficiente
+[14/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps)
+  9) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "3"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat4/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-32aa2-l-stepper-30-ms-entre-taps--off-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[15/15] [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps)
+  10) [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+
+    Error: cantidad inicial 1 + 10 taps
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "11"
+    Received: "6"
+
+      208 |         await d.registrar({ entreTaps, msRafaga, cantidad, tapsRegistrados: cantidad === null ? null : Number(cantidad) - 1, url: ruta(page), apagado });
+      209 |         if (!d.on) expect(apagado).toBe(true);
+    > 210 |         expect(cantidad, 'cantidad inicial 1 + 10 taps').toBe('11');
+          |                                                          ^
+      211 |     });
+      212 | }
+      213 |
+        at /Users/lisandro/dev/dart/mila-invest-app/e2e/semantics-probe/pendientes/f-issues-abiertos.spec.ts:210:58
+
+    Error Context: test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat4/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat4/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/final-pend-off/f-issues-abiertos-F6-12419-9d2a3--stepper-250-ms-entre-taps--off-repeat4/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  10 failed
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (30 ms entre taps) 
+    [off] › pendientes/f-issues-abiertos.spec.ts:187:9 › F6 #124191 / ClickDebouncer · 10 taps seguidos en el stepper "+" (250 ms entre taps) 
+  5 skipped
+off exit=1
