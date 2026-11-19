@@ -51,7 +51,7 @@ void main() {
       final User user = UserDto.fromJson(const <String, Object?>{
         'id': 'usr_1',
         'email': 'demo@milainvest.app',
-        'full_name': 'Camila Demo',
+        'full_name': 'Licho Demo',
         'country': 'CO',
         'base_currency': 'COP',
         'document_type': 'CC',
@@ -61,7 +61,7 @@ void main() {
       expect(user.country, Country.co);
       expect(user.baseCurrency, Currency.cop);
       expect(user.documentType, DocumentType.cc);
-      expect(user.firstName, 'Camila');
+      expect(user.firstName, 'Licho');
     });
 
     test('UserDto rechaza un campo ausente o un país desconocido', () {
