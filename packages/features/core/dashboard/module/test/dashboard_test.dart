@@ -27,7 +27,7 @@ class _MockNavigation extends Mock implements NavigationManager {}
 const User _user = User(
   id: 'usr_1',
   email: 'demo@milainvest.app',
-  fullName: 'Camila Demo',
+  fullName: 'Licho Demo',
   country: Country.co,
   baseCurrency: Currency.cop,
   documentType: DocumentType.cc,
@@ -142,7 +142,7 @@ void main() {
         find.bySemanticsIdentifier(DashboardIds.homeStateLoading),
         findsOneWidget,
       );
-      expect(labelOf(tester, DashboardIds.homeGreetingText), 'Hola, Camila');
+      expect(labelOf(tester, DashboardIds.homeGreetingText), 'Hola, Licho');
       expect(labelOf(tester, DashboardIds.homeSimulatedText), 'Simulado');
       expectNoDuplicateIdentifiers(tester);
       handle.dispose();

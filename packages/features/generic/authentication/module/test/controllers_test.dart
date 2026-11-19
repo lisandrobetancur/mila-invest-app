@@ -17,7 +17,7 @@ class _MockNavigation extends Mock implements NavigationManager {}
 const User _user = User(
   id: 'usr_1',
   email: 'demo@milainvest.app',
-  fullName: 'Camila Demo',
+  fullName: 'Licho Demo',
   country: Country.co,
   baseCurrency: Currency.cop,
   documentType: DocumentType.cc,
@@ -256,7 +256,7 @@ void main() {
       const RegisterState valid = RegisterState(
         country: Country.mx,
         documentType: DocumentType.curp,
-        fullName: 'María López',
+        fullName: 'Saul',
         email: 'maria@correo.mx',
         documentNumber: 'magl850315mdfrrs09',
         password: 'Segura123',
@@ -318,7 +318,7 @@ void main() {
       final RegisterViewModel viewModel =
           harness.container.read(registerViewModelProvider.notifier)
             ..setCountry(Country.co)
-            ..setFullName('Ana Ruiz')
+            ..setFullName('Daniela')
             ..setEmail('ana@correo.co')
             ..setDocumentNumber('52345678')
             ..setPassword('Segura123');
@@ -344,7 +344,7 @@ void main() {
       final RegisterViewModel viewModel =
           harness.container.read(registerViewModelProvider.notifier)
             ..setCountry(Country.co)
-            ..setFullName('Ana Ruiz')
+            ..setFullName('Daniela')
             ..setEmail('demo@milainvest.app')
             ..setDocumentNumber('52345678')
             ..setPassword('Segura123')
@@ -385,7 +385,7 @@ void main() {
       final RegisterViewModel viewModel =
           harness.container.read(registerViewModelProvider.notifier)
             ..setCountry(Country.co)
-            ..setFullName('Ana Ruiz')
+            ..setFullName('Daniela')
             ..setEmail('ana@correo.co')
             ..setDocumentNumber('52345678')
             ..setPassword('Segura123')

@@ -153,7 +153,7 @@ void main() {
         body: <String, Object?>{
           'email': 'Nueva@Correo.mx',
           'password': 'Segura123',
-          'full_name': 'María López',
+          'full_name': 'Saul',
           'country': 'MX',
           'document_type': 'CURP',
           'document_number': 'magl850315mdfrrs09',
@@ -193,7 +193,7 @@ void main() {
       }) => <String, Object?>{
         'email': email,
         'password': 'Segura123',
-        'full_name': 'Ana Ruiz',
+        'full_name': 'Daniela',
         'country': 'CO',
         'document_type': 'CC',
         'document_number': document,

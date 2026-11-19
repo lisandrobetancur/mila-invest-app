@@ -21,7 +21,7 @@ abstract final class FakeDemoAccount {
   static const String password = 'Demo1234!';
 
   /// Nombre de la cuenta demo.
-  static const String fullName = 'Camila Demo';
+  static const String fullName = 'Licho Demo';
 
   /// Documento (CC) de la cuenta demo.
   static const String documentNumber = '1012345678';

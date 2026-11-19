@@ -8,7 +8,7 @@ import 'package:typing/typing.dart';
 const User _user = User(
   id: 'usr_1',
   email: 'demo@milainvest.app',
-  fullName: 'Camila Demo',
+  fullName: 'Licho Demo',
   country: Country.co,
   baseCurrency: Currency.cop,
   documentType: DocumentType.cc,

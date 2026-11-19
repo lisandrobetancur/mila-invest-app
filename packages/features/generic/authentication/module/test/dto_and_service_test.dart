@@ -39,7 +39,7 @@ Matcher _authError(AuthErrorCode code) => throwsA(
 const RegistrationData _registration = RegistrationData(
   email: 'nueva@correo.pe',
   password: 'Segura123',
-  fullName: 'Rosa Quispe',
+  fullName: 'Libia',
   country: Country.pe,
   documentType: DocumentType.dni,
   documentNumber: '45678912',
@@ -51,7 +51,7 @@ void main() {
       final User user = UserDto.fromJson(const <String, Object?>{
         'id': 'usr_1',
         'email': 'demo@milainvest.app',
-        'full_name': 'Camila Demo',
+        'full_name': 'Licho Demo',
         'country': 'CO',
         'base_currency': 'COP',
         'document_type': 'CC',
@@ -61,7 +61,7 @@ void main() {
       expect(user.country, Country.co);
       expect(user.baseCurrency, Currency.cop);
       expect(user.documentType, DocumentType.cc);
-      expect(user.firstName, 'Camila');
+      expect(user.firstName, 'Licho');
     });
 
     test('UserDto rechaza un campo ausente o un país desconocido', () {
@@ -107,7 +107,7 @@ void main() {
           <String, Object?>{
             'email': 'nueva@correo.pe',
             'password': 'Segura123',
-            'full_name': 'Rosa Quispe',
+            'full_name': 'Libia',
             'country': 'PE',
             'document_type': 'DNI',
             'document_number': '45678912',
@@ -186,7 +186,7 @@ void main() {
           const RegistrationData(
             email: 'x@y.co',
             password: 'corta',
-            fullName: 'Ana Ruiz',
+            fullName: 'Daniela',
             country: Country.co,
             documentType: DocumentType.cc,
             documentNumber: '12',

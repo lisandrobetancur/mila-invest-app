@@ -24,7 +24,7 @@ class _MockNavigation extends Mock implements NavigationManager {}
 const User _user = User(
   id: 'usr_1',
   email: 'demo@milainvest.app',
-  fullName: 'Camila Demo',
+  fullName: 'Licho Demo',
   country: Country.co,
   baseCurrency: Currency.cop,
   documentType: DocumentType.cc,
@@ -368,7 +368,7 @@ void main() {
       await _tap(tester, AuthIds.registerCountryMxChip);
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerNameField),
-        'María López',
+        'Saul',
       );
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerEmailField),
@@ -422,7 +422,7 @@ void main() {
       await _tap(tester, AuthIds.registerCountryCoChip);
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerNameField),
-        'Ana Ruiz',
+        'Daniela',
       );
       await tester.enterText(
         find.bySemanticsIdentifier(AuthIds.registerEmailField),
