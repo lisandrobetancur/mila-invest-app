@@ -23,7 +23,7 @@ class OrdersHistoryViewModel extends AutoDisposeViewModel<OrdersHistoryState> {
       AsyncValue<List<Account>>? previous,
       AsyncValue<List<Account>> next,
     ) {
-      if (_started && previous != null && next.hasValue) {
+      if (_started && previous != null && !next.isLoading && next.hasValue) {
         refresh(silent: true);
       }
     });

@@ -31,7 +31,9 @@ class OrderTicketViewModel
         AsyncValue<List<Account>> next,
       ) {
         final List<Account>? accounts = next.valueOrNull;
-        if (accounts != null && isMounted(mountedKey)) {
+        // Al invalidar, Riverpod emite primero un "cargando" que conserva
+        // el valor anterior: solo interesa el valor nuevo.
+        if (!next.isLoading && accounts != null && isMounted(mountedKey)) {
           _applyAccounts(accounts);
           if (state.step == TicketStep.edit) {
             _schedulePreview();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../tokens/app_spacing.dart';
 import 'identified.dart';
 
 /// Campo de texto de la app.
@@ -9,7 +10,9 @@ import 'identified.dart';
 /// error, si hay, se dibuja debajo del campo con su propio identificador
 /// ([errorIdOf]) y se anuncia a los lectores de pantalla. Va fuera de la
 /// decoración a propósito: dentro, el nodo del campo enfocado lo absorbe y
-/// el identificador del error desaparece del árbol.
+/// el identificador del error desaparece del árbol. El widget del sufijo
+/// (mostrar/ocultar, limpiar) se superpone al campo por la misma razón:
+/// dentro del nodo fundido del campo perdería su identificador y su acción.
 class AppTextField extends StatelessWidget {
   /// Crea un campo de texto.
   const AppTextField({
@@ -133,38 +136,54 @@ class AppTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final String? error = errorText;
+    final Widget? trailing = suffix;
     final ThemeData theme = Theme.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Identified.field(
-          id: id,
-          child: TextField(
-            controller: controller,
-            focusNode: focusNode,
-            obscureText: obscureText,
-            enabled: enabled,
-            autofocus: autofocus,
-            keyboardType: keyboardType,
-            textInputAction: textInputAction,
-            textCapitalization: textCapitalization,
-            inputFormatters: inputFormatters,
-            autofillHints: autofillHints,
-            maxLength: maxLength,
-            onChanged: onChanged,
-            onSubmitted: onSubmitted,
-            style: theme.textTheme.bodyLarge,
-            decoration: InputDecoration(
-              labelText: label,
-              hintText: hint,
-              helperText: error == null ? helper : null,
-              counterText: '',
-              prefixIcon: prefix,
-              suffixIcon: suffix,
-              error: error == null ? null : const SizedBox.shrink(),
+        Stack(
+          children: <Widget>[
+            Identified.field(
+              id: id,
+              child: TextField(
+                controller: controller,
+                focusNode: focusNode,
+                obscureText: obscureText,
+                enabled: enabled,
+                autofocus: autofocus,
+                keyboardType: keyboardType,
+                textInputAction: textInputAction,
+                textCapitalization: textCapitalization,
+                inputFormatters: inputFormatters,
+                autofillHints: autofillHints,
+                maxLength: maxLength,
+                onChanged: onChanged,
+                onSubmitted: onSubmitted,
+                style: theme.textTheme.bodyLarge,
+                decoration: InputDecoration(
+                  labelText: label,
+                  hintText: hint,
+                  helperText: error == null ? helper : null,
+                  counterText: '',
+                  prefixIcon: prefix,
+                  suffixIcon: trailing == null
+                      ? null
+                      : const SizedBox.square(
+                          dimension: AppSpacing.minTouchTarget,
+                        ),
+                  error: error == null ? null : const SizedBox.shrink(),
+                ),
+              ),
             ),
-          ),
+            if (trailing != null)
+              PositionedDirectional(
+                top: 0,
+                bottom: 0,
+                end: 0,
+                child: Center(child: trailing),
+              ),
+          ],
         ),
         if (error != null)
           Padding(

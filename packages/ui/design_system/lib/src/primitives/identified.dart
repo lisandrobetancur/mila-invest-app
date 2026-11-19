@@ -15,9 +15,12 @@ import 'package:flutter/widgets.dart';
 ///   checkboxes): funde el identificador con el nodo que el control ya
 ///   expone, de modo que el mismo nodo tenga el identificador, `isButton` y
 ///   la acción de tap. Su subárbol no puede contener otros identificadores.
-/// * [Identified.field], para campos de texto: anota el nodo que ya tiene
-///   `isTextField` sin fundir a sus hijos, así el mensaje de error y el
-///   botón de mostrar/ocultar conservan su propio identificador.
+/// * [Identified.field], para campos de texto: funde el identificador con el
+///   nodo que tiene `isTextField`. Una anotación sin nodo propio se pierde si
+///   el campo está dentro de un contenedor que ya tiene identificador (Flutter
+///   la funde con ese contenedor), así que el campo forma su propio nodo. Su
+///   subárbol no puede contener otros identificadores: `AppTextField` dibuja
+///   el error y el botón del sufijo fuera de él.
 class Identified extends StatelessWidget {
   /// Identifica un contenedor o un valor con un nodo propio.
   const Identified({
@@ -87,7 +90,9 @@ class Identified extends StatelessWidget {
       _IdentifiedMode.control => MergeSemantics(
         child: Semantics(identifier: id, child: child),
       ),
-      _IdentifiedMode.field => Semantics(identifier: id, child: child),
+      _IdentifiedMode.field => MergeSemantics(
+        child: Semantics(identifier: id, child: child),
+      ),
     },
   );
 }

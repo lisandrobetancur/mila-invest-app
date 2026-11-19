@@ -30,7 +30,7 @@ class InstrumentDetailViewModel
         AsyncValue<Portfolio> next,
       ) {
         final Portfolio? portfolio = next.valueOrNull;
-        if (portfolio != null && isMounted(mountedKey)) {
+        if (!next.isLoading && portfolio != null && isMounted(mountedKey)) {
           state = state.copyWith(position: portfolio.positionOf(arg));
         }
       });

@@ -208,6 +208,40 @@ void main() {
       handle.dispose();
     });
 
+    testWidgets('AppTextField conserva su id dentro de un contenedor con id', (
+      WidgetTester tester,
+    ) async {
+      final SemanticsHandle handle = tester.ensureSemantics();
+      await _pump(
+        tester,
+        Identified(
+          id: 'test_ticket_state_data',
+          child: AppTextField(
+            id: 'test_quantity_field',
+            label: 'Cantidad',
+            suffix: AppIconButton(
+              id: 'test_quantity_clear_icon_button',
+              icon: AppIcons.clear,
+              tooltip: 'Limpiar',
+              onPressed: () {},
+            ),
+          ),
+        ),
+      );
+
+      expect(
+        _data(tester, 'test_quantity_field').flagsCollection.isTextField,
+        isTrue,
+      );
+      final SemanticsData clear = _data(
+        tester,
+        'test_quantity_clear_icon_button',
+      );
+      expect(clear.flagsCollection.isButton, isTrue);
+      expect(clear.hasAction(SemanticsAction.tap), isTrue);
+      handle.dispose();
+    });
+
     testWidgets('AppTextField.numeric solo acepta dígitos en modo entero', (
       WidgetTester tester,
     ) async {
