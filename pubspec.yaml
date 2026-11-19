@@ -8,6 +8,7 @@ environment:
 
 workspace:
   - packages/development/lint
+  - packages/shared/network
   - packages/shared/typing
   - packages/shared/utilities
   - packages/ui/design_system
