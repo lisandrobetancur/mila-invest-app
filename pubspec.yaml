@@ -8,6 +8,7 @@ environment:
 
 workspace:
   - packages/development/lint
+  - packages/shared/fake_backend
   - packages/shared/navigator
   - packages/shared/network
   - packages/shared/typing
