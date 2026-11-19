@@ -26,6 +26,7 @@ class Identified extends StatelessWidget {
     this.label,
     this.value,
     this.liveRegion = false,
+    this.replaceChildSemantics = false,
     super.key,
   }) : _mode = _IdentifiedMode.container;
 
@@ -34,14 +35,16 @@ class Identified extends StatelessWidget {
     : _mode = _IdentifiedMode.control,
       label = null,
       value = null,
-      liveRegion = false;
+      liveRegion = false,
+      replaceChildSemantics = false;
 
   /// Identifica un campo de texto anotando su propio nodo.
   const Identified.field({required this.id, required this.child, super.key})
     : _mode = _IdentifiedMode.field,
       label = null,
       value = null,
-      liveRegion = false;
+      liveRegion = false,
+      replaceChildSemantics = false;
 
   /// Identificador estable. Sale siempre de una constante de `<Feature>Ids`.
   final String id;
@@ -49,7 +52,8 @@ class Identified extends StatelessWidget {
   /// Subárbol identificado.
   final Widget child;
 
-  /// Etiqueta para personas; se traduce. Reemplaza la del subárbol.
+  /// Etiqueta para personas; se traduce. Se suma a la del subárbol salvo
+  /// que [replaceChildSemantics] sea `true`.
   final String? label;
 
   /// Valor accesible del nodo (por ejemplo, un monto ya formateado).
@@ -57,6 +61,13 @@ class Identified extends StatelessWidget {
 
   /// Anuncia los cambios a los lectores de pantalla (errores, resultados).
   final bool liveRegion;
+
+  /// Usa solo [label] y [value], descartando la semántica del subárbol.
+  ///
+  /// Sirve para valores cuyo texto visible no es el que conviene leer en
+  /// voz alta (`$ 1.234.567 COP` → "1.234.567 pesos colombianos"). El
+  /// subárbol no puede contener otros identificadores.
+  final bool replaceChildSemantics;
 
   final _IdentifiedMode _mode;
 
@@ -70,6 +81,7 @@ class Identified extends StatelessWidget {
         label: label,
         value: value,
         liveRegion: liveRegion,
+        excludeSemantics: replaceChildSemantics,
         child: child,
       ),
       _IdentifiedMode.control => MergeSemantics(

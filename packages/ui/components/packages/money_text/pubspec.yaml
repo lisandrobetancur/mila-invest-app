@@ -1,0 +1,20 @@
+name: money_text
+description: Muestra un monto con el formato de su moneda.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  design_system: 0.1.0
+  flutter:
+    sdk: flutter
+  typing: 0.1.0
+  utilities: 0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: 0.1.0

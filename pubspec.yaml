@@ -13,6 +13,17 @@ workspace:
   - packages/shared/network
   - packages/shared/typing
   - packages/shared/utilities
+  - packages/ui/components/packages/allocation_donut
+  - packages/ui/components/packages/country_chip
+  - packages/ui/components/packages/disclaimer_banner
+  - packages/ui/components/packages/empty_state
+  - packages/ui/components/packages/error_state
+  - packages/ui/components/packages/instrument_tile
+  - packages/ui/components/packages/money_text
+  - packages/ui/components/packages/order_summary
+  - packages/ui/components/packages/price_change
+  - packages/ui/components/packages/price_chart
+  - packages/ui/components/packages/stat_tile
   - packages/ui/design_system
 
 dev_dependencies:

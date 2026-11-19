@@ -1,0 +1,23 @@
+name: instrument_tile
+description: Fila de un instrumento en una lista.
+publish_to: none
+version: 0.1.0
+resolution: workspace
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  country_chip: 0.1.0
+  decimal: 3.2.6
+  design_system: 0.1.0
+  flutter:
+    sdk: flutter
+  money_text: 0.1.0
+  price_change: 0.1.0
+  typing: 0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  lint: 0.1.0

@@ -54,6 +54,38 @@ void main() {
     });
   });
 
+  group('Formatters.amount y signedMoney', () {
+    test('amount entrega solo el número, para las etiquetas habladas', () {
+      expect(
+        Formatters.amount(Money.parse('1234567', Currency.cop)),
+        '1.234.567',
+      );
+      expect(
+        Formatters.amount(Money.parse('1234.5', Currency.mxn)),
+        '1,234.50',
+      );
+    });
+
+    test('share muestra una participación sin signo', () {
+      expect(
+        Formatters.share(Decimal.parse('62.44'), currency: Currency.cop),
+        '62,4 %',
+      );
+    });
+
+    test('signedMoney antepone el signo y deja el cero sin signo', () {
+      expect(
+        Formatters.signedMoney(Money.parse('35', Currency.cop)),
+        r'+$ 35 COP',
+      );
+      expect(
+        Formatters.signedMoney(Money.parse('-35', Currency.cop)),
+        '\u2212\$ 35 COP',
+      );
+      expect(Formatters.signedMoney(Money.zero(Currency.pen)), 'S/ 0.00');
+    });
+  });
+
   group('Formatters.price', () {
     test('COP usa 0 decimales desde 1.000 y 2 por debajo', () {
       expect(

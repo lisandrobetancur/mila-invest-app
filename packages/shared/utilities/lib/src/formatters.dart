@@ -27,6 +27,15 @@ abstract final class Formatters {
 
   static bool _dateSymbolsReady = false;
 
+  /// Número de un monto, sin símbolo ni código (`1.234.567`).
+  ///
+  /// Es la base de las etiquetas habladas: "1.234.567 pesos colombianos".
+  static String amount(Money value) => _number(
+    value.amount,
+    value.currency.displayDecimals,
+    value.currency.formatLocale,
+  );
+
   /// Flecha de la variación [value]; cadena vacía si es cero.
   static String arrow(Decimal value) {
     if (value > Decimal.zero) {
@@ -115,6 +124,21 @@ abstract final class Formatters {
   /// Cantidad de acciones: entera y con separador de miles.
   static String quantity(int value, {required String locale}) =>
       NumberFormat.decimalPattern(locale).format(value);
+
+  /// Participación porcentual, sin signo (`62,4 %`).
+  static String share(
+    Decimal value, {
+    required Currency currency,
+    int decimals = 1,
+  }) => '${_number(value, decimals, currency.formatLocale)} %';
+
+  /// Monto con signo explícito (`+$ 35 COP`), para variaciones absolutas.
+  ///
+  /// El cero no lleva signo.
+  static String signedMoney(Money value) {
+    final String text = money(value.abs());
+    return '${_sign(value.amount)}$text';
+  }
 
   /// Hora en la zona horaria de [country] (`9:42 a. m.`).
   static String time(
